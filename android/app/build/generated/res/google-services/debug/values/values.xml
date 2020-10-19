@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">4289704353-f1httd3hatn5vcojcf88olprelc9bhqt.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://coli-51867.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">4289704353</string>
+    <string name="google_api_key" translatable="false">AIzaSyBHEcNkMnCIH8EgDp5xVzmWoaA-OgVU1b4</string>
+    <string name="google_app_id" translatable="false">1:4289704353:android:57158c6dd1f59b0e671be0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBHEcNkMnCIH8EgDp5xVzmWoaA-OgVU1b4</string>
+    <string name="google_storage_bucket" translatable="false">coli-51867.appspot.com</string>
+    <string name="project_id" translatable="false">coli-51867</string>
+</resources>

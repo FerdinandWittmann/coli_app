@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "4289704353",
+    "firebase_url": "https://coli-51867.firebaseio.com",
+    "project_id": "coli-51867",
+    "storage_bucket": "coli-51867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4289704353:android:57158c6dd1f59b0e671be0",
+        "android_client_info": {
+          "package_name": "com.coli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4289704353-f1httd3hatn5vcojcf88olprelc9bhqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHEcNkMnCIH8EgDp5xVzmWoaA-OgVU1b4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4289704353-f1httd3hatn5vcojcf88olprelc9bhqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
