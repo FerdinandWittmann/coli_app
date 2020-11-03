@@ -1,3 +1,2 @@
 
-global.ip = "http://192.168.1.170"
-global.port = ":8000"
+global.server = "http://192.168.1.170:8080/"

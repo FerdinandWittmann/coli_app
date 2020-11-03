@@ -3,17 +3,20 @@ import globalHook from 'use-global-hook'
 import auth from '@react-native-firebase/auth'
 
 const actions = {
-    checkToken: (store, token, user) => {
-        if (store.Token == null || token.claims.exp - Date.now() < 10000) {
-            user.getIdTokenResult()
-                .then((jwtToken) => {
-                    store.setState({ Token: jwtToken, Init: true })
-                })
-                .catch((error) => {
-                    console.log("Error")
-                })
+    setState: (store, token) => {
+        if (token != null) {
+            store.setState({
+                token: token,
+                set: true
+            })
+        } else {
+            store.setState({
+                token: null,
+                set: false
+            })
+
         }
     }
 }
-const useFToken = globalHook(React, { Token: "empty", Init: false }, actions)
+const useFToken = globalHook(React, { token: null, set: false }, actions)
 export default useFToken

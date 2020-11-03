@@ -1,30 +1,7 @@
 import React from 'react'
-import useFToken from './GlobalState/useFToken'
-import useFUser from './GlobalState/useFUser'
 
-secFetchJson = (method, body, url) => {
-    const [ftoken, setFToken] = useFToken()
-    const [fUser, setFUser] = useFUser()
-
-    if ((ftoken == null && fUser != null || ftoken.claims.exp - Date.now() <= 10000)) {
-        fUser.getIdTokenResult()
-            .then((jwtToken) => {
-                setFToken.postToken(jwtToken, fUser)
-                body.FToken = jwtToken
-                return extfetch(method, body, url)
-            })
-            .catch((error) => {
-                return JSON.stringify({ Error: error })
-            })
-    } else if (ftoken.claims.exp - Date.now > 10000) {
-        return extfetch(method, body, url)
-    } else {
-        return JSON.stringify({ Error: "FirebaseUser: Not Logged In" })
-    }
-}
-
-function extfetch(method, body, url) {
-    fetch(global.ip + global.port + url, {
+export function secFetch(token, url, method, body) {
+    fetch(global.ip + global.port + "/" + token + url, {
         method: method,
         headers: {
             Accept: 'application/json',
@@ -40,4 +17,3 @@ function extfetch(method, body, url) {
             return JSON.stringify({ Error: error })
         })
 }
-export default secFetchJson
