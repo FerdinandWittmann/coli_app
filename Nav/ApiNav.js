@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler';
 import React, { useState, useEffect, useContext } from 'react';
 import { View, TextInput, Text, Button } from 'react-native'
+import { TokenContext } from "./App"
 import '../global'
 
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
@@ -17,12 +18,13 @@ import AdvProfile from '../Screens/AdvProfileScreen'
 import DropdownPicker from 'react-native-dropdown-picker'
 
 const ApiNav = ({
-    authToken,
 }) => {
+    const tokenRef = useContext(TokenContext)
     const [user, setUser] = useState()
     const Tab = createMaterialBottomTabNavigator()
     const [role, setRole] = useState()
     const [city, setCity] = useState()
+    const [advForm, setAdvForm] = useState()
     useEffect(() => {
         fetch(server + "user",
             {
@@ -30,7 +32,7 @@ const ApiNav = ({
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
-                    'Authorization': authToken
+                    'Authorization': tokenRef.current.token
 
                 },
             })
@@ -46,34 +48,40 @@ const ApiNav = ({
             .catch((error) => {
                 console.log(error)
             })
-        return () => setUser(null)
     }, [])
 
     function setupUser() {
-        console.log(
-            JSON.stringify({
+        let json = null
+        if (role && role == "advertiser") {
+            json = JSON.stringify({
+                ...user,
+                role: role,
+                advForm: advForm,
+                city: city
+            })
+        } else {
+            json = JSON.stringify({
                 ...user,
                 role: role,
                 city: city
             })
+        }
+        console.log(
+            json
         )
-        fetch(server + "user/" + authToken,
+        fetch(server + "user",
             {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
-                    'Authorization': authToken
+                    'Authorization': tokenRef.current.token
 
                 },
-                body: JSON.stringify({
-                    ...user,
-                    role: role,
-                    city: city
-                })
+                body: json
             })
             .then((response) => {
-                if (repsonse.ok) {
+                if (response.ok) {
                     return response.json()
                 }
             })
@@ -109,11 +117,28 @@ const ApiNav = ({
                         onChangeItem={(item) => setRole(item.value)
                         }
                     /></View>
+                <Text>Chose Advertisement Type</Text>
+                <View style={{ flex: 1 }}>
+                    <DropdownPicker
+                        items={[
+                            { label: 'Shared Living Space', value: 'shared' },
+                            { label: 'Individual Home', value: 'individual' },
+                        ]}
+                        containerStyle={{ height: 40 }}
+                        style={{ backgroundColor: '#fafafa' }}
+                        itemStyle={{
+                            justifyContent: 'flex-start'
+                        }}
+                        placeholder="Is the property shared or individual?"
+                        dropDownStyle={{ backgroundColor: '#fafafa' }}
+                        onChangeItem={(item) => setAdvForm(item.value)
+                        }
+                    /></View>
                 <View style={{ flex: 1 }}>
                     <Text>City</Text>
                     <TextInput
                         style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
-                        onChangeText={text => setCity(city)}
+                        onChangeText={text => setCity(text)}
                         value={city}
                     />
                     <Button

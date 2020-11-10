@@ -5,50 +5,10 @@ import { Button, View, Alert, Text, TextInput } from 'react-native'
 import useAuthToken from "../GlobalState/useAuthToken"
 import { TokenContext } from "../Nav/App"
 const App = ({
-    navigation
 }) => {
-    const tokenRef = useContext(TokenContext)
     const [initializing, setInitializing] = useState(true);
-    const [authToken, authTokenActions] = useAuthToken()
     const [email, setEmail] = useState("g@g.de")
-    const [pwd, setPwd] = useState("11111111")
-    const server = global.server
-    useEffect(() => {
-        const subscriberAuth = auth().onUserChanged(onUserChanged)
-        return subscriberAuth // unsubscribe on unmount
-    }, [])
-
-    // If User or Token Changes this gets called
-    function onUserChanged(user) {
-        if (user != null) {
-            if (!authToken.set || authToken.token.exp - Date.now() < 1000)
-                user.getIdTokenResult()
-                    .then((jwtToken) => {
-                        fetch(server + "user",
-                            {
-                                method: 'GET',
-                                headers: {
-                                    Accept: 'application/json',
-                                    'Content-Type': 'application/json',
-                                    'Authorization': jwtToken.token
-                                },
-                            })
-                            .then((response) => {
-                                if (response.ok) {
-                                    authTokenActions.setToken(jwtToken)
-                                    tokenRef.current = jwtToken.token
-                                }
-                            })
-                            .catch((error) => {
-                                console.log(error)
-                            })
-                    })
-                    .catch((error) => {
-                        console.log(error)
-                    })
-        }
-        if (initializing) setInitializing(false)
-    }
+    const [pwd, setPwd] = useState("111111")
 
     function signInFirebaseUser() {
         auth()
@@ -61,8 +21,6 @@ const App = ({
             })
 
     }
-
-    if (initializing) return null
     return (
         <View style={{ flex: 1 }}>
             <Text>EMAIL</Text>
