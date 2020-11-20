@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 const AdvChatScreen = ({
     navigation
 }) => {
-    let col = "#" + randomString({ length: 6 })
+    let col = "green"
     return (
         <View style={{ flex: 1, backgroundColor: col }}></View>
     )
