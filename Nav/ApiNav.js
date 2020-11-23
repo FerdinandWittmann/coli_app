@@ -1,31 +1,31 @@
 import 'react-native-gesture-handler';
 import React, { useState, useEffect, useContext } from 'react';
-import { View, TextInput, Text, Button } from 'react-native'
+import { Keyboard, View, TextInput, Text, Button } from 'react-native'
 import { TokenContext } from "./App"
 import '../global'
-
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { NavigationContainer } from '@react-navigation/native'
-
-import SplashScreen from '../SplashScreen'
-import AppCards from '../Screens/AppCardsScreen'
-import AppChat from '../Screens/AppChatScreen'
-import AppProfile from '../Screens/AppProfileScreen'
-import HouseCards from '../Screens/HouseCardsScreen'
-import AdvCards from '../Screens/AdvCardsScreen'
-import AdvChat from '../Screens/AdvChatScreen'
-import AdvProfile from '../Screens/AdvProfileScreen'
+import SplashScreen from '../Components/LoadingScreen'
+import AppCards from '../Applicant/Container/AppCardsScreen'
+import AppChat from '../Applicant/Container/AppChatScreen'
+import AppProfile from '../Applicant/Container/AppProfileScreen'
+import HouseCards from '../Container/HouseCardsScreen'
+import AdvCards from '../Advertiser/Container/AdvCardsScreen'
+import AdvChat from '../Advertiser/Container/AdvChatScreen'
+import AdvProfile from '../Advertiser/Container/AdvProfileScreen'
 import DropdownPicker from 'react-native-dropdown-picker'
-
 const ApiNav = ({
 }) => {
     const tokenRef = useContext(TokenContext)
     const [user, setUser] = useState()
-    const Tab = createMaterialBottomTabNavigator()
+    const Tab = createMaterialTopTabNavigator()
     const [role, setRole] = useState()
     const [city, setCity] = useState()
     const [advForm, setAdvForm] = useState()
+    const [keyboard, setKeyboard] = useState(false)
     useEffect(() => {
+        Keyboard.addListener("keyboardDidShow", _keyboardDidShow)
+        Keyboard.addListener("keyboardDidHide", _keyboardDidHide)
         fetch(server + "user",
             {
                 method: 'GET',
@@ -48,8 +48,17 @@ const ApiNav = ({
             .catch((error) => {
                 console.log(error)
             })
+        return () => {
+            Keyboard.removeListener('keyboardDidShow', _keyboardDidShow)
+            Keyboard.removeListener('keyboardDidHide', _keyboardDidHide)
+        }
     }, [])
-
+    function _keyboardDidShow() {
+        setKeyboard(true)
+    }
+    function _keyboardDidHide() {
+        setKeyboard(false)
+    }
     function setupUser() {
         let json = null
         if (role && role == "advertiser") {
@@ -153,9 +162,9 @@ const ApiNav = ({
     else if (user.role == "applicant") {
         return (
             <NavigationContainer>
-                <Tab.Navigator>
+                <Tab.Navigator style={keyboard ? { marginBottom: -60 } : { marginBottom: 0 }} tabBarPosition={'bottom'}>
                     <Tab.Screen name="AppCards" component={AppCards} />
-                    <Tab.Screen name="HouseCards" component={HouseCards} />
+                    {/*<Tab.Screen name="HouseCards" component={HouseCards} />*/}
                     <Tab.Screen name="Chat" component={AppChat} />
                     <Tab.Screen name="Profile" component={AppProfile} />
                 </Tab.Navigator>
@@ -164,7 +173,7 @@ const ApiNav = ({
     } else if (user.role == "advertiser") {
         return (
             <NavigationContainer>
-                <Tab.Navigator>
+                <Tab.Navigator style={keyboard ? { marginBottom: -60 } : { marginBottom: 0 }} tabBarPosition={'bottom'}>
                     <Tab.Screen name="AppCards" component={AdvCards} />
                     <Tab.Screen name="Chat" component={AdvChat} />
                     <Tab.Screen name="Profile" component={AdvProfile} />

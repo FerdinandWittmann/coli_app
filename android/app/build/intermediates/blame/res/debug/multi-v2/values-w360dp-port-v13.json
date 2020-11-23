@@ -4,7 +4,7 @@
             "outputFile": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/0de090eb085e2927f79d80e53e48fe4a/material-1.1.0/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+                    "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

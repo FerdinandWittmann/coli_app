@@ -4,7 +4,7 @@
             "outputFile": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/d2974ac36bf11b6e048576ef94732df8/appcompat-1.1.0/res/values-v17/values-v17.xml",
+                    "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
