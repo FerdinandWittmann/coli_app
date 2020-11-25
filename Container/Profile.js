@@ -3,22 +3,25 @@ import { Button, View, Text, StyleSheet } from 'react-native'
 import auth from '@react-native-firebase/auth'
 import ProfileFrame from './ProfileFrame'
 import LoadingScreen from '../Components/LoadingScreen'
+import useProfile from '../GlobalState/useProfile'
 const Profile = ({
     getSettings,
     getProfile,
     user,
 }) => {
-    let col = "yellow"
     const [mode, setMode] = useState(0)
+    const [profile, profileActions] = useProfile()
     function logOut() {
         auth()
             .signOut()
             .then(() => console.log("successfull logged out"))
             .catch((error) => console.log(error))
     }
-    useEffect(() => {
-    }, [])
 
+    function updateProfile() {
+
+        exitPressed()
+    }
     function exitPressed() {
         if (mode == 1) {
             setMode(0)
@@ -32,6 +35,11 @@ const Profile = ({
                 <Button
                     onPress={exitPressed}
                     title={mode == 0 ? "settings" : "exit"}
+                    color="#841584"
+                />
+                <Button
+                    onPress={updateProfile}
+                    title="Save Changes"
                     color="#841584"
                 />
                 <Button
