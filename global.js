@@ -5,7 +5,7 @@ global.dimensions = {
     height: Dimensions.get('window').height,
 }
 global.styles = {
-    backgroundColor: '#024dc4',
+    backgroundColor: 'blue',
     headerTextColor: '#FFFFFF',
     headerBackgroundColor: '#ffffff',
     textColor: '#2667ff',

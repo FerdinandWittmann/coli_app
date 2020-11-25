@@ -6,6 +6,7 @@ import DescBox from '../../Components/DescBox'
 import HeaderBox from '../../Components/HeaderBox'
 import styles from '../../Styles/profile'
 const FlatmatesForm = ({
+    update,
     user,
     data,
 }) => {

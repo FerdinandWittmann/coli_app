@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     frame: {
         flex: 1,
         borderRadius: 10,
-        backgroundColor: "black",
+        backgroundColor: "orange",
         overflow: 'hidden',
         margin: 10
     },

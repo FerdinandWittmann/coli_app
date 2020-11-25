@@ -4,9 +4,8 @@ import auth from '@react-native-firebase/auth'
 import ProfileFrame from './ProfileFrame'
 import LoadingScreen from '../Components/LoadingScreen'
 const Profile = ({
-    getSettings,
-    getProfile,
-    user,
+    settings,
+    profile,
 }) => {
     let col = "yellow"
     const [mode, setMode] = useState(0)
@@ -42,9 +41,9 @@ const Profile = ({
             </View>
             <ProfileFrame
                 mode={mode}
-                settings={getSettings(user)}
+                settings={settings}
                 loadingScreen={<LoadingScreen></LoadingScreen>}
-                profile={getProfile(user)}
+                profile={profile}
             >
             </ProfileFrame >
         </View >

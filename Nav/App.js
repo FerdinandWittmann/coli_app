@@ -1,7 +1,6 @@
 
 import 'react-native-gesture-handler';
 import React, { useState, useEffect, useRef, createContext } from 'react';
-import '../global'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
 import Registration from '../Auth/RegistrationScreen';
