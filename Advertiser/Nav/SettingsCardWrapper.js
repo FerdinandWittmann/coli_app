@@ -11,13 +11,13 @@ const SettingsCardWrapper = ({
     if (route.params.form == "AdvForm") {
         return (
             <View style={{ flex: 1, transform: [{ rotateY: '180deg' }] }}>
-                <SettingsCard form={<AdvForm />}></SettingsCard>
+                <SettingsCard form={<AdvForm user={route.params.user} />}></SettingsCard>
             </View>
         )
     } else if (route.params.form == "RoomForm") {
         return (
             <View style={{ flex: 1, transform: [{ rotateY: '180deg' }] }}>
-                <SettingsCard form={<RoomForm />}></SettingsCard>
+                <SettingsCard form={<RoomForm user={route.params.user} />}></SettingsCard>
             </View>
         )
     }
@@ -25,7 +25,7 @@ const SettingsCardWrapper = ({
         return (
 
             <View style={{ flex: 1, transform: [{ rotateY: '180deg' }] }}>
-                <SettingsCard form={<FlatmatesForm />}></SettingsCard>
+                <SettingsCard form={<FlatmatesForm user={route.params.user} />}></SettingsCard>
             </View>
 
         )

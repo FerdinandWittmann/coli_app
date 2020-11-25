@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { View, TouchableOpacity, Text, StyleSheet, Animated } from 'react-native'
-const CardFrame = ({
+const ProfileFrame = ({
     profile,
     loadingScreen,
     settings,
-    mode
+    mode,
 }) => {
     const [currentMode, setCurrentMode] = useState(mode)
     const fadeAnim = useRef(
@@ -70,4 +70,4 @@ const styles = StyleSheet.create({
         margin: 10
     },
 })
-export default CardFrame
+export default ProfileFrame 

@@ -1,19 +1,28 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { Button, View, Text, StyleSheet, ImageBackground } from 'react-native'
 import AdvSettingsNav from '../Nav/AdvSettingsNav'
 import AdvProfileNav from '../Nav/AdvProfileNav'
 import Profile from '../../Container/Profile'
-import SettingsCard from '../../Container/SettingsCard'
 const AdvProfileScreen = ({
+    route,
     navigation
 }) => {
+    const getProfile = useCallback((user) => {
+        return (<AdvProfileNav user={user}></AdvProfileNav>)
+    }, [])
+
+    const getSettings = useCallback((user) => {
+        return (<AdvSettingsNav user={user}></AdvSettingsNav>)
+    }, [])
+
     return (
         <View style={{ flex: 1 }}>
             <ImageBackground style={{ flex: 1, resizeMode: 'stretch' }} source={require('../../Resources/BackgroundImages/3.jpg')}>
                 <Profile
-                    settings={<AdvSettingsNav></AdvSettingsNav>}
-                    profile={<AdvProfileNav></AdvProfileNav>}
+                    user={route.params.user}
+                    getSettings={getSettings}
+                    getProfile={getProfile}
                 />
             </ImageBackground>
         </View>

@@ -7,8 +7,10 @@ import DescBox from '../../Components/DescBox'
 import HeaderBox from '../../Components/HeaderBox'
 import styles from '../../Styles/profile'
 const AdvForm = ({
+    user,
     data,
 }) => {
+    console.log("AdvForm: ", user)
     const [name, setName] = useState()
     const [age, setAge] = useState()
     const [profession, setProfession] = useState()

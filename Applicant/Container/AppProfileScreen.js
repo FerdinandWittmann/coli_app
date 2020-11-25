@@ -4,13 +4,14 @@ import Profile from '../../Container/Profile'
 import SettingsCard from '../../Container/SettingsCard'
 import AppForm from './AppForm'
 const AppProfileScreen = ({
-    navigation
+    navigation,
+    user
 }) => {
     return (
         <View style={{ flex: 1 }}>
             <ImageBackground style={{ flex: 1, resizeMode: 'stretch' }} source={require('../../Resources/BackgroundImages/3.jpg')}>
                 <Profile
-                    settings={<SettingsCard form={<AppForm></AppForm>}></SettingsCard>}
+                    settings={<SettingsCard form={<AppForm user={user}></AppForm>}></SettingsCard>}
                     profile={<View></View>} />
             </ImageBackground>
         </View>

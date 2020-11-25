@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Button, View, Text, StyleSheet } from 'react-native'
 import auth from '@react-native-firebase/auth'
-import CardFrame from './ProfileFrame'
+import ProfileFrame from './ProfileFrame'
 import LoadingScreen from '../Components/LoadingScreen'
-
 const Profile = ({
-    profile,
-    settings,
+    getSettings,
+    getProfile,
+    user,
 }) => {
     let col = "yellow"
     const [mode, setMode] = useState(0)
@@ -16,7 +16,10 @@ const Profile = ({
             .then(() => console.log("successfull logged out"))
             .catch((error) => console.log(error))
     }
-    function modeChange() {
+    useEffect(() => {
+    }, [])
+
+    function exitPressed() {
         if (mode == 1) {
             setMode(0)
         } else {
@@ -27,7 +30,7 @@ const Profile = ({
         <View style={{ flex: 1 }}>
             <View style={styles.containerButtons}>
                 <Button
-                    onPress={modeChange}
+                    onPress={exitPressed}
                     title={mode == 0 ? "settings" : "exit"}
                     color="#841584"
                 />
@@ -37,13 +40,13 @@ const Profile = ({
                     color="#841584"
                 />
             </View>
-            <CardFrame
+            <ProfileFrame
                 mode={mode}
-                settings={settings}
+                settings={getSettings(user)}
                 loadingScreen={<LoadingScreen></LoadingScreen>}
-                profile={profile}
+                profile={getProfile(user)}
             >
-            </CardFrame >
+            </ProfileFrame >
         </View >
     )
 }

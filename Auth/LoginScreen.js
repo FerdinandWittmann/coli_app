@@ -2,8 +2,7 @@ import 'react-native-gesture-handler';
 import React, { useState, useEffect, useContext } from 'react';
 import auth from '@react-native-firebase/auth'
 import { Button, View, Alert, Text, TextInput } from 'react-native'
-import useAuthToken from "../GlobalState/useAuthToken"
-import { TokenContext } from "../Nav/App"
+
 const App = ({
 }) => {
     const [initializing, setInitializing] = useState(true);

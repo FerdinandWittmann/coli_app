@@ -14,6 +14,7 @@ import AdvCards from '../Advertiser/Container/AdvCardsScreen'
 import AdvChat from '../Advertiser/Container/AdvChatScreen'
 import AdvProfile from '../Advertiser/Container/AdvProfileScreen'
 import DropdownPicker from 'react-native-dropdown-picker'
+import { getUser, updateUser } from '../Api/profile'
 const ApiNav = ({
 }) => {
     const tokenRef = useContext(TokenContext)
@@ -26,7 +27,15 @@ const ApiNav = ({
     useEffect(() => {
         Keyboard.addListener("keyboardDidShow", _keyboardDidShow)
         Keyboard.addListener("keyboardDidHide", _keyboardDidHide)
-        fetch(server + "user",
+        getUser(tokenRef.current.token)
+            .then((u) => {
+                console.log(u)
+                setUser(u)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        /*fetch(server + "user",
             {
                 method: 'GET',
                 headers: {
@@ -51,7 +60,12 @@ const ApiNav = ({
         return () => {
             Keyboard.removeListener('keyboardDidShow', _keyboardDidShow)
             Keyboard.removeListener('keyboardDidHide', _keyboardDidHide)
+        }*/
+        return () => {
+            Keyboard.removeListener("keyboardDidShow", _keyboardDidShow)
+            Keyboard.removeListener("keyboardDidHide", _keyboardDidHide)
         }
+
     }, [])
     function _keyboardDidShow() {
         setKeyboard(true)
@@ -78,22 +92,7 @@ const ApiNav = ({
         console.log(
             json
         )
-        fetch(server + "user",
-            {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                    'Authorization': tokenRef.current.token
-
-                },
-                body: json
-            })
-            .then((response) => {
-                if (response.ok) {
-                    return response.json()
-                }
-            })
+        updateUser(tokenRef.current.token, json)
             .then((u) => {
                 setUser(u)
             })
@@ -166,7 +165,10 @@ const ApiNav = ({
                     <Tab.Screen name="AppCards" component={AppCards} />
                     {/*<Tab.Screen name="HouseCards" component={HouseCards} />*/}
                     <Tab.Screen name="Chat" component={AppChat} />
-                    <Tab.Screen name="Profile" component={AppProfile} />
+                    <Tab.Screen
+                        name="Profile"
+                        initialParams={{ user: user }}
+                        component={AppProfile} />
                 </Tab.Navigator>
             </NavigationContainer>
         )
@@ -176,7 +178,10 @@ const ApiNav = ({
                 <Tab.Navigator style={keyboard ? { marginBottom: -60 } : { marginBottom: 0 }} tabBarPosition={'bottom'}>
                     <Tab.Screen name="AppCards" component={AdvCards} />
                     <Tab.Screen name="Chat" component={AdvChat} />
-                    <Tab.Screen name="Profile" component={AdvProfile} />
+                    <Tab.Screen
+                        name="Profile"
+                        initialParams={{ user: user }}
+                        component={AdvProfile} />
                 </Tab.Navigator>
             </NavigationContainer>
         )

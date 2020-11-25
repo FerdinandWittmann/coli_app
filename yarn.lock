@@ -5777,10 +5777,10 @@ react-native-gesture-handler@^1.8.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-image-picker@^3.0.0-vnext.4:
-  version "3.0.0-vnext.4"
-  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-3.0.0-vnext.4.tgz#47f47bf6e9768b8dd375c746a041296ad254b131"
-  integrity sha512-iNjdYsIZuBS7TNbj/ez3oiHJNPPvOvJdHpQYZQ+rrt0FR+YJyIlz4DfXmU93KsPf7AP0euF7JLrcepF8RtJNxg==
+react-native-image-picker@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-2.3.4.tgz#1c31dbe9872ade17e2ed6457b0c669d63c322590"
+  integrity sha512-4UHu+zOyDT570r5mIbjH6h1iMrKIq/qfsKiAVUEZwncVegh0usJiEYNyJw4CEVwNeehmye/ia5sLDsa+kzIE4g==
 
 react-native-image-slider-box@^1.0.12:
   version "1.0.12"
@@ -7080,6 +7080,11 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+use-global-hook@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/use-global-hook/-/use-global-hook-0.2.1.tgz#3b10eee41946dce8f951926c2f478a0f8b1a8cfd"
+  integrity sha512-rLxSGHluN0bOaHG6PiuY/QSElNZM/kc7gnyr7065BC4Pw5zHRZf+a91tbGoDdoF5ZIV0OdS3Gn/bTQEFvFZCxw==
 
 use-subscription@^1.0.0:
   version "1.5.1"

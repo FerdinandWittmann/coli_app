@@ -5,6 +5,7 @@ import DescBox from '../../Components/DescBox'
 import HeaderBox from '../../Components/HeaderBox'
 import styles from '../../Styles/profile'
 const RoomForm = ({
+    user,
     data,
 }) => {
     const [title, setTitle] = useState()

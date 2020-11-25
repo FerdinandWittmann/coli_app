@@ -9,8 +9,6 @@ SettingsImage = ({
     dimensions
 }) => {
     const [images, setImages] = useState(['https://reactnative.dev/img/tiny_logo.png', 'https://reactnative.dev/img/tiny_logo.png'])
-    const [imageMethod, setImageMethod] = useState()
-    const [showImageNotification, setShowImageNotification] = useState(false)
     function removeImage() {
         console.log("remove image")
     }
@@ -33,21 +31,39 @@ SettingsImage = ({
             )
         }
     }*/
+    function takePhoto() {
+        let options = {
+            mediaType: 'photo',
+        }
+        ImagePicker.launchCamera(options, (response) => {
+            if (response.uri) {
+
+            }
+        })
+    }
+    function chooseImage() {
+        let options = {
+            mediaType: 'photo'
+        }
+        ImagePicker.launchImageLibrary(options, (response) => {
+            if (response.uri) {
+            }
+        })
+    }
+
     function addImage() {
-        let method = ""
         //style property for iOs possible
         Alert.alert(
             "Image Picker",
             "Select Image",
             [{
-                text: "Take Photo...",
-                onPress: () => { method = "camera" },
+                text: "CANCEL",
             }, {
                 text: "Choose Image...",
-                onPress: () => { method = "gallery" },
+                onPress: () => { chooseImage() },
             }, {
-                text: "CANCEL",
-                onPress: () => { method = "" }
+                text: "Take Photo...",
+                onPress: () => { takePhoto() },
             }
             ]
 
