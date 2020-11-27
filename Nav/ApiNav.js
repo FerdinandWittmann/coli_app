@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React, { useState, useEffect, useContext } from 'react';
 import { Keyboard, View, TextInput, Text, Button } from 'react-native'
-import { TokenContext } from "./App"
+import { TokenContext } from "../GlobalState/TokenContext"
 import '../global'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { NavigationContainer } from '@react-navigation/native'
@@ -14,7 +14,7 @@ import AdvCards from '../Advertiser/Container/AdvCardsScreen'
 import AdvChat from '../Advertiser/Container/AdvChatScreen'
 import AdvProfile from '../Advertiser/Container/AdvProfileScreen'
 import DropdownPicker from 'react-native-dropdown-picker'
-import { getUser, updateUser } from '../Api/profile'
+import { getUser, updateUser } from '../Api/user'
 const ApiNav = ({
 }) => {
     const tokenRef = useContext(TokenContext)
@@ -22,7 +22,7 @@ const ApiNav = ({
     const Tab = createMaterialTopTabNavigator()
     const [role, setRole] = useState()
     const [city, setCity] = useState()
-    const [advForm, setAdvForm] = useState()
+    const [flatsize, setFlatsize] = useState()
     const [keyboard, setKeyboard] = useState(false)
     useEffect(() => {
         Keyboard.addListener("keyboardDidShow", _keyboardDidShow)
@@ -77,14 +77,12 @@ const ApiNav = ({
         let json = null
         if (role && role == "advertiser") {
             json = JSON.stringify({
-                ...user,
                 role: role,
-                advForm: advForm,
+                flatsize: flatsize,
                 city: city
             })
         } else {
             json = JSON.stringify({
-                ...user,
                 role: role,
                 city: city
             })
@@ -129,17 +127,25 @@ const ApiNav = ({
                 <View style={{ flex: 1 }}>
                     <DropdownPicker
                         items={[
-                            { label: 'Shared Living Space', value: 'shared' },
-                            { label: 'Individual Home', value: 'individual' },
+                            { label: '1', value: 1 },
+                            { label: '2', value: 2 },
+                            { label: '3', value: 3 },
+                            { label: '4', value: 4 },
+                            { label: '5', value: 5 },
+                            { label: '6', value: 6 },
+                            { label: '7', value: 7 },
+                            { label: '8', value: 8 },
+                            { label: '9', value: 9 },
+                            { label: '10', value: 10 },
                         ]}
                         containerStyle={{ height: 40 }}
                         style={{ backgroundColor: '#fafafa' }}
                         itemStyle={{
                             justifyContent: 'flex-start'
                         }}
-                        placeholder="Is the property shared or individual?"
+                        placeholder="For how many people is your shared-flat?"
                         dropDownStyle={{ backgroundColor: '#fafafa' }}
-                        onChangeItem={(item) => setAdvForm(item.value)
+                        onChangeItem={(item) => setFlatsize(item.value)
                         }
                     /></View>
                 <View style={{ flex: 1 }}>
@@ -167,7 +173,6 @@ const ApiNav = ({
                     <Tab.Screen name="Chat" component={AppChat} />
                     <Tab.Screen
                         name="Profile"
-                        initialParams={{ user: user }}
                         component={AppProfile} />
                 </Tab.Navigator>
             </NavigationContainer>
@@ -180,7 +185,6 @@ const ApiNav = ({
                     <Tab.Screen name="Chat" component={AdvChat} />
                     <Tab.Screen
                         name="Profile"
-                        initialParams={{ user: user }}
                         component={AdvProfile} />
                 </Tab.Navigator>
             </NavigationContainer>

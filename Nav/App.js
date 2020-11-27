@@ -8,8 +8,8 @@ import Registration from '../Auth/RegistrationScreen';
 import Login from '../Auth/LoginScreen';
 import ApiNav from './ApiNav'
 import auth from '@react-native-firebase/auth'
-export const TokenContext = createContext()
-
+import { TokenProvider } from '../GlobalState/TokenContext'
+import { getUser } from '../Api/user'
 const App = () => {
     const tokenRef = useRef(null)
     const Tab = createMaterialBottomTabNavigator()
@@ -26,15 +26,7 @@ const App = () => {
             if (!tokenRef.current || tokenRef.current.exp - Date.now() < 1000)
                 user.getIdTokenResult()
                     .then((jwtToken) => {
-                        fetch(server + "user",
-                            {
-                                method: 'GET',
-                                headers: {
-                                    Accept: 'application/json',
-                                    'Content-Type': 'application/json',
-                                    'Authorization': jwtToken.token
-                                },
-                            })
+                        getUser(jwtToken.token)
                             .then((response) => {
                                 if (response.ok) {
                                     tokenRef.current = {
@@ -58,20 +50,20 @@ const App = () => {
     }
     if (loggedIn == 0) {
         return (
-            <TokenContext.Provider value={tokenRef}>
+            <TokenProvider token={tokenRef}>
                 <NavigationContainer>
                     <Tab.Navigator>
                         <Tab.Screen name="Login" component={Login} />
                         <Tab.Screen name="Register" component={Registration} />
                     </Tab.Navigator>
                 </NavigationContainer>
-            </TokenContext.Provider>
+            </TokenProvider>
         )
     } else {
         return (
-            <TokenContext.Provider value={tokenRef}>
+            <TokenProvider token={tokenRef}>
                 <ApiNav />
-            </TokenContext.Provider>
+            </TokenProvider >
         )
     }
 };

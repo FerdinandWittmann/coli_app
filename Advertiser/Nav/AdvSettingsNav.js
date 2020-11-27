@@ -11,9 +11,9 @@ const AdvSettingsNav = ({
     return (
         <View style={{ flex: 1, transform: [{ rotateY: '180deg' }] }}>
             <Tab.Navigator tabBarPosition={'top'}>
-                <Tab.Screen name="Room" initialParams={{ form: "RoomForm", user: user }} component={SettingsCardWrapper} />
-                <Tab.Screen name="Flatmates" initialParams={{ form: "FlatmatesForm", user: user }} component={SettingsCardWrapper} />
-                <Tab.Screen name="Profile" initialParams={{ form: "AdvForm", user: user }} component={SettingsCardWrapper} />
+                <Tab.Screen name="Room" initialParams={{ form: "RoomForm" }} component={SettingsCardWrapper} />
+                <Tab.Screen name="Flatmates" initialParams={{ form: "FlatmatesForm" }} component={SettingsCardWrapper} />
+                <Tab.Screen name="Profile" initialParams={{ form: "AdvForm" }} component={SettingsCardWrapper} />
             </Tab.Navigator>
         </View>
     )

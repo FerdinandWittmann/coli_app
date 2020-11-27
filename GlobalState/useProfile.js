@@ -2,12 +2,16 @@ import React from 'react'
 import globalHook from 'use-global-hook'
 
 const actions = {
-    setUser: (store, user) => {
-        store.setState({
-            ...user
+    setState: (store, state) => {
+        store.setState({ state: state })
+    },
+    GET: (store, token) => {
+        apiState = store.state.map((obj) => {
+
         })
     }
 }
-
-const useProfile = globalHook(React, {}, actions)
+const initialState = {
+}
+const useProfile = globalHook(React, { state: [], profile: {} }, actions)
 export default useProfile

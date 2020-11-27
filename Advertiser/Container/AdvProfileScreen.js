@@ -5,24 +5,25 @@ import AdvSettingsNav from '../Nav/AdvSettingsNav'
 import AdvProfileNav from '../Nav/AdvProfileNav'
 import Profile from '../../Container/Profile'
 const AdvProfileScreen = ({
-    route,
-    navigation
 }) => {
-    const getProfile = useCallback((user) => {
-        return (<AdvProfileNav user={user}></AdvProfileNav>)
-    }, [])
 
-    const getSettings = useCallback((user) => {
-        return (<AdvSettingsNav user={user}></AdvSettingsNav>)
-    }, [])
-
+    const updateState = [{
+        name: "room",
+        state: null,
+    }, {
+        name: "flatmates",
+        state: null,
+    }, {
+        name: "adv",
+        state: null
+    }]
     return (
         <View style={{ flex: 1 }}>
             <ImageBackground style={{ flex: 1, resizeMode: 'stretch' }} source={require('../../Resources/BackgroundImages/3.jpg')}>
                 <Profile
-                    user={route.params.user}
-                    getSettings={getSettings}
-                    getProfile={getProfile}
+                    updateState={updateState}
+                    profileScreen={<AdvProfileNav ></AdvProfileNav>}
+                    settingsScreen={<AdvSettingsNav ></AdvSettingsNav>}
                 />
             </ImageBackground>
         </View>

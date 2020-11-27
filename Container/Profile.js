@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Button, View, Text, StyleSheet } from 'react-native'
 import auth from '@react-native-firebase/auth'
 import ProfileFrame from './ProfileFrame'
 import LoadingScreen from '../Components/LoadingScreen'
 import useProfile from '../GlobalState/useProfile'
+import { TokenContext } from '../GlobalState/TokenContext'
 const Profile = ({
-    getSettings,
-    getProfile,
-    user,
+    updateState,
+    settingsScreen,
+    profileScreen,
 }) => {
+    const token = useContext(TokenContext)
     const [mode, setMode] = useState(0)
+    const [update, setUpdate] = useState(false)
     const [profile, profileActions] = useProfile()
     function logOut() {
         auth()
@@ -17,10 +20,15 @@ const Profile = ({
             .then(() => console.log("successfull logged out"))
             .catch((error) => console.log(error))
     }
+    useEffect(() => {
+        if (profile.state.length != 0) {
+            if (profile.state.every((obj) => { return (obj.state != null) })) {
 
+            }
+        }
+    }, [profile])
     function updateProfile() {
-
-        exitPressed()
+        profileActions.setState(updateState)
     }
     function exitPressed() {
         if (mode == 1) {
@@ -50,9 +58,9 @@ const Profile = ({
             </View>
             <ProfileFrame
                 mode={mode}
-                settings={getSettings(user)}
+                settings={settingsScreen}
                 loadingScreen={<LoadingScreen></LoadingScreen>}
-                profile={getProfile(user)}
+                profile={profileScreen}
             >
             </ProfileFrame >
         </View >
