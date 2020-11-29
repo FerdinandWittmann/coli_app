@@ -6,8 +6,6 @@ import DescBox from '../../Components/DescBox'
 import HeaderBox from '../../Components/HeaderBox'
 import styles from '../../Styles/profile'
 const FlatmatesForm = ({
-    user,
-    data,
 }) => {
     const [name, setName] = useState()
     const [flatmates, setFlatmates] = useState()
@@ -17,6 +15,7 @@ const FlatmatesForm = ({
     return (
         <View style={styles.container}>
             <View style={styles.containerBox}>
+                <SettingsImage />
                 <HeaderBox text={"Flat"} ></HeaderBox>
                 <FormBox
                     title={"Flatname"}

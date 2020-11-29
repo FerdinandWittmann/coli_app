@@ -6,9 +6,9 @@ import ImagePicker from 'react-native-image-picker'
 import Notification from '../Container/Notification'
 import ImageNotification from '../Components/ImageNotification'
 SettingsImage = ({
-    dimensions
 }) => {
     const [images, setImages] = useState(['https://reactnative.dev/img/tiny_logo.png', 'https://reactnative.dev/img/tiny_logo.png'])
+    const [dimensions, setDimensions] = useState({ width: '100%', height: global.dimensions.height * 2 / 3 * 5 / 7, set: false })
     function removeImage() {
         console.log("remove image")
     }
@@ -70,38 +70,37 @@ SettingsImage = ({
         )
     }
     return (
-        <View style={[styles.containerImageSettings, { width: dimensions.width, height: dimensions.height / 2 }]}
+        <View onLayout={(dim) => setDimensions({ ...dim.nativeEvent.layout, set: true })} style={{ width: dimensions.width, height: dimensions.height }}
         >
-            <SliderBox
-                //dim * 2/3 image size in Cards. (dim)*(3/4) resize for buttons
-                parentWidth={dimensions.width * (3 / 4)}
-                sliderBoxHeight={(dimensions.height * (3 / 4)) * (2 / 3)}
-                images={images}
-                ImageComponentStyle={styles.imageComponent}
-            />
-            <View style={[styles.containerButtons, {
-                height: (dimensions.height * (3 / 4)) * (2 / 3),
-                width: dimensions.width * (1 / 4)
-            }]}>
-                <TouchableOpacity style={styles.buttons} onPress={() => removeImage()}>
-                    <MIcon style={styles.button} name='delete' ></MIcon>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttons} onPress={() => addImage()}>
-                    <MIcon style={styles.button} name='add-a-photo' ></MIcon>
-                </TouchableOpacity>
+            {dimensions.set ? <View style={styles.containerImageSettings}>
+                <SliderBox
+                    //dim * 2/3 image size in Cards. (dim)*(3/4) resize for buttons
+                    parentWidth={dimensions.width * 3 / 4}
+                    sliderBoxHeight={dimensions.height}
+                    images={images}
+                    ImageComponentStyle={styles.imageComponent}
+                />
+                <View style={[styles.containerButtons, {
+                    height: dimensions.height,
+                }]}>
+                    <TouchableOpacity style={styles.buttons} onPress={() => removeImage()}>
+                        <MIcon style={styles.button} name='delete' ></MIcon>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttons} onPress={() => addImage()}>
+                        <MIcon style={styles.button} name='add-a-photo' ></MIcon>
+                    </TouchableOpacity>
 
-            </View>
+                </View>
+            </View> : null}
         </View>
     )
 }
 
 var styles = StyleSheet.create({
     containerImageSettings: {
+        flex: 1,
         flexDirection: 'row',
         backgroundColor: 'white',
-        transform: [{
-            rotateY: '180deg'
-        }]
     },
     containerSliderBox: {
         flex: 3,

@@ -4,27 +4,29 @@ import FlatmatesForm from '../Container/FlatmatesForm'
 import AdvForm from '../Container/AdvForm'
 import SettingsCard from '../../Container/SettingsCard'
 import { View } from 'react-native'
+import useCardItems from '../../GlobalState/useCardItems'
 const SettingsCardWrapper = ({
     route,
 }) => {
-    if (route.params.form == "AdvForm") {
+    let carditem = route.params.carditem
+
+    if (carditem.name == "profile") {
         return (
             <View style={{ flex: 1, transform: [{ rotateY: '180deg' }] }}>
-                <SettingsCard form={<AdvForm />}></SettingsCard>
+                <AdvForm carditem={carditem} />
             </View>
         )
-    } else if (route.params.form == "RoomForm") {
+    } else if (carditem.name == "room") {
         return (
             <View style={{ flex: 1, transform: [{ rotateY: '180deg' }] }}>
-                <SettingsCard form={<RoomForm />}></SettingsCard>
+                <RoomForm carditem={carditem} />
             </View>
         )
     }
     else {
         return (
-
             <View style={{ flex: 1, transform: [{ rotateY: '180deg' }] }}>
-                <SettingsCard form={<FlatmatesForm />}></SettingsCard>
+                <FlatmatesForm carditem={carditem} />
             </View>
 
         )

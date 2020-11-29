@@ -4,9 +4,8 @@ import FormBox from '../../Components/FormBox'
 import DescBox from '../../Components/DescBox'
 import HeaderBox from '../../Components/HeaderBox'
 import styles from '../../Styles/profile'
+import SettingsImage from '../../Components/SettingsImage'
 const RoomForm = ({
-    user,
-    data,
 }) => {
     const [title, setTitle] = useState()
     const [prize, setPrize] = useState()
@@ -19,6 +18,7 @@ const RoomForm = ({
     return (
         <View style={styles.container}>
             <View style={styles.containerBox}>
+                <SettingsImage />
                 <HeaderBox text={"Room"} ></HeaderBox>
                 <FormBox
                     title={"Title"}

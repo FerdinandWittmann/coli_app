@@ -5,7 +5,8 @@ import SettingsImage from '../Components/SettingsImage'
 import LoadingScreen from '../Components/LoadingScreen'
 const SettingsCard = ({
     data,
-    form
+    form,
+    carditem
 }) => {
     const [dimensions, setDimensions] = useState()
     if (!dimensions) {
@@ -20,7 +21,7 @@ const SettingsCard = ({
     }
     return (
         <ScrollView style={styles.container} >
-            <SettingsImage dimensions={dimensions}></SettingsImage>
+            <SettingsImage carditem={carditem} dimensions={dimensions}></SettingsImage>
             {form}
         </ScrollView >
     )

@@ -10,15 +10,10 @@ export function getUser(token) {
 
             },
         })
-        .then((response) => {
-            if (response.ok) {
-                return response.json()
-            }
-        })
 }
 
-export function updateUser(token, json) {
-    return fetch(server + "user",
+export function createCards(token, json, role) {
+    return fetch(server + "user/" + role,
         {
             method: 'POST',
             headers: {

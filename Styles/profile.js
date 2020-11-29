@@ -3,6 +3,11 @@ import { StyleSheet } from 'react-native'
 
 const g = global.styles
 export default styles = StyleSheet.create({
+    scrollView: {
+        transform: [{
+            rotateY: '180deg'
+        }]
+    },
     container: {
         transform: [{
             rotateY: '180deg'

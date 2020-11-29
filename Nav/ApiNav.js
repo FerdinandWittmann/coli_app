@@ -14,7 +14,7 @@ import AdvCards from '../Advertiser/Container/AdvCardsScreen'
 import AdvChat from '../Advertiser/Container/AdvChatScreen'
 import AdvProfile from '../Advertiser/Container/AdvProfileScreen'
 import DropdownPicker from 'react-native-dropdown-picker'
-import { getUser, updateUser } from '../Api/user'
+import { getUser, createCards } from '../Api/user'
 const ApiNav = ({
 }) => {
     const tokenRef = useContext(TokenContext)
@@ -23,28 +23,12 @@ const ApiNav = ({
     const [role, setRole] = useState()
     const [city, setCity] = useState()
     const [flatsize, setFlatsize] = useState()
-    const [keyboard, setKeyboard] = useState(false)
+    const [freeRooms, setFreeRooms] = useState()
+    const [keyboard, setKeyboard] = useState()
     useEffect(() => {
         Keyboard.addListener("keyboardDidShow", _keyboardDidShow)
         Keyboard.addListener("keyboardDidHide", _keyboardDidHide)
         getUser(tokenRef.current.token)
-            .then((u) => {
-                console.log(u)
-                setUser(u)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-        /*fetch(server + "user",
-            {
-                method: 'GET',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                    'Authorization': tokenRef.current.token
-
-                },
-            })
             .then((response) => {
                 if (response.ok) {
                     return response.json()
@@ -57,10 +41,6 @@ const ApiNav = ({
             .catch((error) => {
                 console.log(error)
             })
-        return () => {
-            Keyboard.removeListener('keyboardDidShow', _keyboardDidShow)
-            Keyboard.removeListener('keyboardDidHide', _keyboardDidHide)
-        }*/
         return () => {
             Keyboard.removeListener("keyboardDidShow", _keyboardDidShow)
             Keyboard.removeListener("keyboardDidHide", _keyboardDidHide)
@@ -77,6 +57,7 @@ const ApiNav = ({
         let json = null
         if (role && role == "advertiser") {
             json = JSON.stringify({
+                freerooms: freeRooms,
                 role: role,
                 flatsize: flatsize,
                 city: city
@@ -90,13 +71,71 @@ const ApiNav = ({
         console.log(
             json
         )
-        updateUser(tokenRef.current.token, json)
+        createCards(tokenRef.current.token, json, role)
             .then((u) => {
                 setUser(u)
             })
             .catch((error) => {
                 console.log(error)
             })
+    }
+    function advertPicker() {
+        if (role == "advertiser") {
+            return (
+                <View style={{ flex: 1 }}>
+                    <DropdownPicker
+                        items={[
+                            { label: '1', value: 1 },
+                            { label: '2', value: 2 },
+                            { label: '3', value: 3 },
+                            { label: '4', value: 4 },
+                            { label: '5', value: 5 },
+                            { label: '6', value: 6 },
+                            { label: '7', value: 7 },
+                            { label: '8', value: 8 },
+                            { label: '9', value: 9 },
+                            { label: '10', value: 10 },
+                        ]}
+                        containerStyle={{ height: 40 }}
+                        style={{ backgroundColor: '#fafafa' }}
+                        itemStyle={{
+                            justifyContent: 'flex-start'
+                        }}
+                        placeholder="For how many people is your shared-flat?"
+                        dropDownStyle={{ backgroundColor: '#fafafa' }}
+                        onChangeItem={(item) => setFlatsize(item.value)
+                        }
+                    />
+                    <DropdownPicker
+                        items={[
+                            { label: '1', value: 1 },
+                            { label: '2', value: 2 },
+                            { label: '3', value: 3 },
+                            { label: '4', value: 4 },
+                            { label: '5', value: 5 },
+                            { label: '6', value: 6 },
+                            { label: '7', value: 7 },
+                            { label: '8', value: 8 },
+                            { label: '9', value: 9 },
+                            { label: '10', value: 10 },
+                        ]}
+                        containerStyle={{ height: 40 }}
+                        style={{ backgroundColor: '#fafafa' }}
+                        itemStyle={{
+                            justifyContent: 'flex-start'
+                        }}
+                        placeholder="How many rooms are free in your flat?"
+                        dropDownStyle={{ backgroundColor: '#fafafa' }}
+                        onChangeItem={(item) => setFreeRooms(item.value)
+                        }
+                    />
+                </View>
+            )
+        } else {
+            return (
+                <View style={{ flex: 1 }} ></ View>
+            )
+        }
     }
     if (!user) {
         return (
@@ -123,31 +162,7 @@ const ApiNav = ({
                         onChangeItem={(item) => setRole(item.value)
                         }
                     /></View>
-                <Text>Chose Advertisement Type</Text>
-                <View style={{ flex: 1 }}>
-                    <DropdownPicker
-                        items={[
-                            { label: '1', value: 1 },
-                            { label: '2', value: 2 },
-                            { label: '3', value: 3 },
-                            { label: '4', value: 4 },
-                            { label: '5', value: 5 },
-                            { label: '6', value: 6 },
-                            { label: '7', value: 7 },
-                            { label: '8', value: 8 },
-                            { label: '9', value: 9 },
-                            { label: '10', value: 10 },
-                        ]}
-                        containerStyle={{ height: 40 }}
-                        style={{ backgroundColor: '#fafafa' }}
-                        itemStyle={{
-                            justifyContent: 'flex-start'
-                        }}
-                        placeholder="For how many people is your shared-flat?"
-                        dropDownStyle={{ backgroundColor: '#fafafa' }}
-                        onChangeItem={(item) => setFlatsize(item.value)
-                        }
-                    /></View>
+                {advertPicker()}
                 <View style={{ flex: 1 }}>
                     <Text>City</Text>
                     <TextInput
@@ -185,6 +200,7 @@ const ApiNav = ({
                     <Tab.Screen name="Chat" component={AdvChat} />
                     <Tab.Screen
                         name="Profile"
+                        initialParams={{ carditems: user.carditems }}
                         component={AdvProfile} />
                 </Tab.Navigator>
             </NavigationContainer>

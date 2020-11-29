@@ -5,6 +5,7 @@ import AdvSettingsNav from '../Nav/AdvSettingsNav'
 import AdvProfileNav from '../Nav/AdvProfileNav'
 import Profile from '../../Container/Profile'
 const AdvProfileScreen = ({
+    route
 }) => {
 
     const updateState = [{
@@ -21,9 +22,10 @@ const AdvProfileScreen = ({
         <View style={{ flex: 1 }}>
             <ImageBackground style={{ flex: 1, resizeMode: 'stretch' }} source={require('../../Resources/BackgroundImages/3.jpg')}>
                 <Profile
+                    cards={route.params.cards}
                     updateState={updateState}
                     profileScreen={<AdvProfileNav ></AdvProfileNav>}
-                    settingsScreen={<AdvSettingsNav ></AdvSettingsNav>}
+                    settingsScreen={<AdvSettingsNav carditems={route.params.carditems} ></AdvSettingsNav>}
                 />
             </ImageBackground>
         </View>

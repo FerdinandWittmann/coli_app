@@ -1,6 +1,7 @@
 
 import 'react-native-gesture-handler';
 import React, { useState, useEffect, useRef, createContext } from 'react';
+import { LogBox } from 'react-native'
 import '../global'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
@@ -10,6 +11,8 @@ import ApiNav from './ApiNav'
 import auth from '@react-native-firebase/auth'
 import { TokenProvider } from '../GlobalState/TokenContext'
 import { getUser } from '../Api/user'
+
+LogBox.ignoreLogs(['Warning: Remote Debugger'])
 const App = () => {
     const tokenRef = useRef(null)
     const Tab = createMaterialBottomTabNavigator()
