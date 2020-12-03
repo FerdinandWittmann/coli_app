@@ -1,27 +1,32 @@
-
 import React, { useEffect, useState } from 'react'
 import { View, Text, Button, StyleSheet } from 'react-native'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import { NavigationContainer } from '@react-navigation/native'
-
 const AdvProfileNav = ({
+    cardItems,
+    children
 }) => {
 
     const Tab = createMaterialTopTabNavigator()
+
     return (
-        <View></View>
-        /*<NavigationContainer>
-            <Tab.Navigator tabBarPosition={'top'}>
-                <Tab.Screen name="Room" component={RoomForm} />
-                <Tab.Screen name="Flatmates" component={FlatmatesForm} />
-                <Tab.Screen name="Profile" component={AdvForm} />
+        <View style={{ backgroundColor: 'white', flex: 1 }}>
+            <Tab.Navigator tabBarPosition={'top'}
+            >
+                {cardItems.map((cardItem, key) => {
+                    return <Tab.Screen
+                        key={key}
+                        name={cardItem.name == "room" && cardItem.number.$numberInt != "1" ?
+                            cardItem.name + cardItem.number.$numberInt :
+                            cardItem.name}
+                        initialParams={{ cardItem: cardItem }}
+                        component={children} />
+                })}
             </Tab.Navigator>
-        </NavigationContainer>
-        */
+        </View>
     )
 }
 var styles = StyleSheet.create({
 
 
 })
-export default AdvProfileNav 
+export default AdvProfileNav

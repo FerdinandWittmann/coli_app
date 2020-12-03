@@ -1,18 +1,27 @@
 import { Dimensions } from 'react-native'
-global.server = "http://192.168.1.170:8080/"
-global.dimensions = {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
-}
-global.styles = {
-    backgroundColor: '#024dc4',
+global.server = "http://192.168.1.170:8080/api/"
+global.imageServer = "http://192.168.1.170:8080/static/"
+global.STYLES = {
+    backgroundColor: '#fec629',
+	mediumBackgroundColor: '#ffedb4',
+	smallBackgroundColor: '#fff7d8',
     headerTextColor: '#FFFFFF',
     headerBackgroundColor: '#ffffff',
-    textColor: '#2667ff',
+    textColor: 'black',
     largeGap: 10,
     smallGap: 5,
     largeRadius: 20,
+	middleRadius: 10,
     smallRadius: 5,
     headerFontSize: 15,
     textFontSize: 8,
+    imageComponent: {
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10
+    },
+	regularFontSize: 15,
+	largeFontSize: 30,
+	regularFontColor: '#000000',
+	padding: 5,
+
 }

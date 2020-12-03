@@ -16,8 +16,8 @@ export function getCardItems(token) {
         })
 }
 
-export function updateCards(token, json) {
-    return fetch(server + "cards",
+export function updateCardItems(token, json) {
+    return fetch(server + "carditems",
         {
             method: 'POST',
             headers: {

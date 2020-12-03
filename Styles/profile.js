@@ -1,17 +1,18 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
 
-const g = global.styles
+const g = global.STYLES
 export default styles = StyleSheet.create({
     scrollView: {
         transform: [{
             rotateY: '180deg'
-        }]
+        }],
+        backgroundColor: g.smallBackgroundColor
     },
     container: {
         transform: [{
             rotateY: '180deg'
-        }]
+        }],
     },
     containerHeader: {
         backgroundColor: g.backgroundColor,
@@ -21,7 +22,7 @@ export default styles = StyleSheet.create({
     },
     header: {
         textTransform: 'uppercase',
-        color: g.headerTextColor,
+        color: g.regularFontColor,
         fontWeight: 'bold'
     },
     title: {

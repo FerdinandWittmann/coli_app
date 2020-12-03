@@ -1,11 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { cloneElement, useContext, useEffect, useState } from 'react'
 import { Button, View, Text, StyleSheet } from 'react-native'
 import auth from '@react-native-firebase/auth'
 import ProfileFrame from './ProfileFrame'
 import LoadingScreen from '../Components/LoadingScreen'
 import useCardItems from '../GlobalState/useCardItems'
 import { TokenContext } from '../GlobalState/TokenContext'
-import { getCardItems } from "../Api/carditems"
+import { getCardItems, updateCardItems } from "../Api/carditems"
+import { uploadImages } from '../Api/images'
 const Profile = ({
     cards,
     updateState,
@@ -25,19 +26,40 @@ const Profile = ({
     }
     useEffect(() => {
         getCardItems(tokenRef.current.token)
-            .then((cardItems) => {
-                cardItemsActions.setState(cardItems)
+            .then((_cardItems) => {
+                cardItemsActions.setState(_cardItems)
                 setApiLoading(false)
             })
     }, [])
-
     useEffect(() => {
-        console.log(cardItems)
+        let finished = true
+        if (cardItems && cardItems.carditems) {
+            cardItems.carditems.map((_cardItem) => {
+                if (!_cardItem.staged || _cardItem.staged != "finished") {
+                    finished = false
+                }
+            })
+            if (finished) {
+                let json = JSON.stringify({ carditems: cardItems.carditems })
+                updateCardItems(tokenRef.current.token, json)
+                    .then((_cardItems) => {
+                        cardItemsActions.setState(_cardItems)
+                        setMode(0)
+                    })
+            }
+        }
     }, [cardItems])
 
+
     function updateProfile() {
-        console.log("updatePressed")
         cardItemsActions.stageUpdate()
+        /*console.log("updatePressed")
+        cardItemsActions.stageUpdate()
+        if (update == false) {
+            setUpdate(true)
+        } else {
+            setUpdate(false)
+        }*/
         //profileActions.setState(updateState)
     }
     function exitPressed() {
@@ -73,9 +95,9 @@ const Profile = ({
                 </View>
                 <ProfileFrame
                     mode={mode}
-                    settings={settingsScreen}
+                    settings={cloneElement(settingsScreen, { cardItems: cardItems.carditems, update: update })}
                     loadingScreen={<LoadingScreen></LoadingScreen>}
-                    profile={profileScreen}
+                    profile={cloneElement(profileScreen, { cardItems: cardItems.carditems, update: update })}
                 >
                 </ProfileFrame >
             </View >

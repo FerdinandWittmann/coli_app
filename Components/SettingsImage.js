@@ -1,43 +1,48 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { View, TouchableOpacity, StyleSheet, Alert } from 'react-native'
 import { SliderBox } from 'react-native-image-slider-box'
 import MIcon from 'react-native-vector-icons/MaterialIcons'
 import ImagePicker from 'react-native-image-picker'
-import Notification from '../Container/Notification'
-import ImageNotification from '../Components/ImageNotification'
+import { uploadImage } from '../Api/images'
+import { TokenContext } from '../GlobalState/TokenContext'
 SettingsImage = ({
+    dimensions,
+    images,
+    addImage,
+    removeImage,
+    cardItem
 }) => {
-    const [images, setImages] = useState(['https://reactnative.dev/img/tiny_logo.png', 'https://reactnative.dev/img/tiny_logo.png'])
-    const [dimensions, setDimensions] = useState({ width: '100%', height: global.dimensions.height * 2 / 3 * 5 / 7, set: false })
+    const tokenRef = useContext(TokenContext)
     function removeImage() {
         console.log("remove image")
     }
 
-    /*function takeImage() {
-        if (setShowImageNotification == true) {
-            setShowImageNotification(false)
-        } else {
-            setShowImageNotification(true)
+    function _uploadImage(uri, type) {
+        let image = {
+            uri: uri,
+            type: type,
+            name: cardItem.name + "/" + cardItem.number.$numberInt,
         }
+        uploadImage(tokenRef.current.token, image)
+            .then((url) => {
 
+                addImage(url)
+            })
     }
-    function showImagePicker() {
-        if (setShowImageNotification) {
-            return (
-                <Notification
-                    setShow={setShowImageNotification}
-                >
-                </Notification>
-            )
-        }
-    }*/
     function takePhoto() {
         let options = {
             mediaType: 'photo',
         }
         ImagePicker.launchCamera(options, (response) => {
+            if (response.didCancel) {
+                return
+            }
+            if (response.error) {
+                Alert.alert("Failed to add the Image")
+                return
+            }
             if (response.uri) {
-
+                _uploadImage(response.uri)
             }
         })
     }
@@ -46,12 +51,20 @@ SettingsImage = ({
             mediaType: 'photo'
         }
         ImagePicker.launchImageLibrary(options, (response) => {
+            if (response.didCancel) {
+                return
+            }
+            if (response.error) {
+                Alert.alert("Failed to add the Image")
+                return
+            }
             if (response.uri) {
+                _uploadImage(response.uri, response.type)
             }
         })
     }
 
-    function addImage() {
+    function openImagePicker() {
         //style property for iOs possible
         Alert.alert(
             "Image Picker",
@@ -70,35 +83,33 @@ SettingsImage = ({
         )
     }
     return (
-        <View onLayout={(dim) => setDimensions({ ...dim.nativeEvent.layout, set: true })} style={{ width: dimensions.width, height: dimensions.height }}
+        <View style={[styles.containerImageSettings, { width: dimensions.width, height: dimensions.height / 2 }]}
         >
-            {dimensions.set ? <View style={styles.containerImageSettings}>
-                <SliderBox
-                    //dim * 2/3 image size in Cards. (dim)*(3/4) resize for buttons
-                    parentWidth={dimensions.width * 3 / 4}
-                    sliderBoxHeight={dimensions.height}
-                    images={images}
-                    ImageComponentStyle={styles.imageComponent}
-                />
-                <View style={[styles.containerButtons, {
-                    height: dimensions.height,
-                }]}>
-                    <TouchableOpacity style={styles.buttons} onPress={() => removeImage()}>
-                        <MIcon style={styles.button} name='delete' ></MIcon>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttons} onPress={() => addImage()}>
-                        <MIcon style={styles.button} name='add-a-photo' ></MIcon>
-                    </TouchableOpacity>
+            <SliderBox
+                //dim * 2/3 image size in Cards. (dim)*(3/4) resize for buttons
+                parentWidth={dimensions.width * (3 / 4)}
+                sliderBoxHeight={(dimensions.height * (3 / 4)) * (2 / 3)}
+                images={images.map((_image) => { return (imageServer + _image) })}
+                ImageComponentStyle={styles.imageComponent}
+            />
+            <View style={[styles.containerButtons, {
+                height: (dimensions.height * (3 / 4)) * (2 / 3),
+                width: dimensions.width * (1 / 4)
+            }]}>
+                <TouchableOpacity style={styles.buttons} onPress={() => removeImage()}>
+                    <MIcon style={styles.button} name='delete' ></MIcon>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.buttons} onPress={() => openImagePicker()}>
+                    <MIcon style={styles.button} name='add-a-photo' ></MIcon>
+                </TouchableOpacity>
 
-                </View>
-            </View> : null}
+            </View>
         </View>
     )
 }
 
 var styles = StyleSheet.create({
     containerImageSettings: {
-        flex: 1,
         flexDirection: 'row',
         backgroundColor: 'white',
     },

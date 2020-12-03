@@ -4,6 +4,8 @@ import { Button, View, Text, StyleSheet, ImageBackground } from 'react-native'
 import AdvSettingsNav from '../Nav/AdvSettingsNav'
 import AdvProfileNav from '../Nav/AdvProfileNav'
 import Profile from '../../Container/Profile'
+import SettingsCardWrapper from '../Nav/SettingsCardWrapper'
+import ProfileCardWrapper from '../Nav/ProfileCardWrapper'
 const AdvProfileScreen = ({
     route
 }) => {
@@ -24,8 +26,8 @@ const AdvProfileScreen = ({
                 <Profile
                     cards={route.params.cards}
                     updateState={updateState}
-                    profileScreen={<AdvProfileNav ></AdvProfileNav>}
-                    settingsScreen={<AdvSettingsNav carditems={route.params.carditems} ></AdvSettingsNav>}
+                    profileScreen={<AdvProfileNav children={ProfileCardWrapper} ></AdvProfileNav>}
+                    settingsScreen={<AdvSettingsNav children={SettingsCardWrapper}></AdvSettingsNav>}
                 />
             </ImageBackground>
         </View>

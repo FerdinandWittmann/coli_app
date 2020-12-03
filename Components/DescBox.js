@@ -5,11 +5,12 @@ const g = global.styles
 const DescBox = ({
     placeholderText,
     value,
-    setValue
+    setValue,
+    height
 }) => {
     return (
         <TextInput
-            style={[styles.text, { borderBottomWidth: 2 }]}
+            style={[styles.text, { borderBottomWidth: 2, height: height }]}
             placeholder={placeholderText}
             placeholderTextColor={g.textColor}
             onChangeText={text => setValue(text)}
