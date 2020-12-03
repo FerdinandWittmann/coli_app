@@ -22,5 +22,16 @@ export default globalStyles = StyleSheet.create({
         height: 1,
         borderBottomWidth: 1,
         borderBottomColor: '#828282',
+    },
+    textBoxes: {
+        paddingTop: 15,
+        paddingHorizontal: 15,
+    },
+    textHeader: {
+        fontSize: 15,
+    },
+    text: {
+        fontWeight: 'bold',
+        fontSize: 20,
     }
 }) 

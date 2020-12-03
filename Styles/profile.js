@@ -34,7 +34,6 @@ export default styles = StyleSheet.create({
         borderColor: g.backgroundColor,
     },
     text: {
-        textTransform: 'capitalize',
         marginVertical: g.smallGap / 2,
         marginHorizontal: g.largeGap,
         fontWeight: 'bold',
