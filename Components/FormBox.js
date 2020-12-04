@@ -9,8 +9,8 @@ const FormBox = ({
     setValue
 }) => {
     return (
-        <View  >
-            <Text style={styles.title}>{title.toUpperCase()}</Text>
+        <View >
+            {title ? <Text style={styles.title}>{title.toUpperCase()}</Text> : null}
             <TextInput
                 style={[styles.text, { borderBottomWidth: 2 }]}
                 placeholder={placeholderText}

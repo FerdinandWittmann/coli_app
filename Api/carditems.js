@@ -28,9 +28,4 @@ export function updateCardItems(token, json) {
             },
             body: json
         })
-        .then((response) => {
-            if (response.ok) {
-                return response.json()
-            }
-        })
 }

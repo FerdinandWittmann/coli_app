@@ -4,13 +4,11 @@ import React, { useEffect, useState } from 'react'
 import { TextInput, ScrollView, View, Text, Button, StyleSheet, FlatList, Alert } from 'react-native'
 import FormBox from '../../Components/FormBox'
 import DescBox from '../../Components/DescBox'
-import HeaderBox from '../../Components/HeaderBox'
 import styles from '../../Styles/profile'
 import useCardItems from '../../GlobalState/useCardItems'
 import SettingsImage from '../../Components/SettingsImage'
 import ObjectsBox from '../../Components/ObjectsBox'
 import profileAttributes from '../../Resources/profileAttributes'
-import { TouchableOpacity } from 'react-native-gesture-handler'
 import TextObject from '../../Components/TextObject'
 import TouchableTextObject from '../../Container/TouchableObject'
 const AdvForm = ({
@@ -77,14 +75,8 @@ const AdvForm = ({
     }
     const removeImage = (image) => {
         setImages((_images) => {
-            newImages = _images.map((_image) => {
-                if (_image == image) {
-                    return
-                } else {
-                    return image
-                }
-            })
-            setImages(newImages)
+            let newImages = _images.filter((_image) => _image !== image)
+            return [...newImages]
         })
     }
     const addImage = (image) => {
@@ -95,7 +87,7 @@ const AdvForm = ({
     return (
         <ScrollView style={[styles.scrollView]}>
             <SettingsImage cardItem={cardItem} addImage={addImage} removeImage={removeImage} images={images} dimensions={dimensions}></SettingsImage>
-            <HeaderBox text={"profile"} ></HeaderBox>
+            <Text style={styles.descTitle}>Who are you?</Text>
             <FormBox
                 title={"Name"}
                 placeholderText={"enter your name please."}
@@ -111,21 +103,7 @@ const AdvForm = ({
                 placeholderText={"enter your profession/studies here please."}
                 value={profession}
                 setValue={setProfession}></FormBox>
-            <HeaderBox text={"Why are you the best Flatmate?"} ></HeaderBox>
-            <DescBox
-                placeholderText={"quickly express yourself (500 Characters)"}
-                value={shortDesc}
-                setValue={setShortDesc}
-                height={150}
-            ></DescBox>
-            <HeaderBox text={"Tell us about yourself"} ></HeaderBox>
-            <DescBox
-                placeholderText={"tell your future flatmates all they need to know about you"}
-                value={desc}
-                setValue={setDesc}
-                height={450}
-            ></DescBox>
-            <HeaderBox text={"Work/University Address"} ></HeaderBox>
+            <Text style={styles.descTitle}>Where will you work or study in your future city?</Text>
             <FormBox
                 title={"Streetname"}
                 placeholderText={"enter your streetname of your workplace or university here please."}
@@ -141,7 +119,21 @@ const AdvForm = ({
                 placeholderText={"enter your postalcode here please."}
                 value={addressPostCode}
                 setValue={setAddressPostCode}></FormBox>
-            <HeaderBox text={"Attributes"} ></HeaderBox>
+            <Text style={styles.descTitle}>Flats should choose you, because...</Text>
+            <DescBox
+                placeholderText={"quickly express yourself (500 Characters)"}
+                value={shortDesc}
+                setValue={setShortDesc}
+                height={100}
+            ></DescBox>
+            <Text style={styles.descTitle}>Tell them a some more about who you are and how you imagine living together...</Text>
+            <DescBox
+                placeholderText={"tell your future flatmates all they need to know about you"}
+                value={desc}
+                setValue={setDesc}
+                height={250}
+            ></DescBox>
+            <Text style={styles.descTitle}>Choose up to 6 interests of yours...</Text>
             <ObjectsBox objects={profileAttributes.map((attribute, key) => {
                 let selected = false
                 if (attributes.includes(attribute)) {

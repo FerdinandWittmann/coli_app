@@ -1,5 +1,5 @@
 import React, { cloneElement, useContext, useEffect, useState } from 'react'
-import { Button, View, Text, StyleSheet } from 'react-native'
+import { Button, View, Text, StyleSheet, Alert } from 'react-native'
 import auth from '@react-native-firebase/auth'
 import ProfileFrame from './ProfileFrame'
 import LoadingScreen from '../Components/LoadingScreen'
@@ -42,6 +42,15 @@ const Profile = ({
             if (finished) {
                 let json = JSON.stringify({ carditems: cardItems.carditems })
                 updateCardItems(tokenRef.current.token, json)
+                    .then((response) => {
+                        if (response.ok) {
+                            return response.json()
+                        }
+                        if (response.status == 491) {
+                            Alert.alert("Address could not be decoded")
+                            return response.json()
+                        }
+                    })
                     .then((_cardItems) => {
                         cardItemsActions.setState(_cardItems)
                         setMode(0)

@@ -1,7 +1,7 @@
 import React from 'react'
 import { TextInput, ScrollView, View, Text, Button, StyleSheet, FlatList } from 'react-native'
 import styles from '../Styles/profile'
-const g = global.styles
+const g = global.STYLES
 const DescBox = ({
     placeholderText,
     value,
@@ -10,7 +10,7 @@ const DescBox = ({
 }) => {
     return (
         <TextInput
-            style={[styles.text, { borderBottomWidth: 2, height: height }]}
+            style={[styles.descText, { height: height }]}
             placeholder={placeholderText}
             placeholderTextColor={g.textColor}
             onChangeText={text => setValue(text)}

@@ -12,9 +12,10 @@ SettingsImage = ({
     removeImage,
     cardItem
 }) => {
+    const [imageIndex, setImageIndex] = useState(0)
     const tokenRef = useContext(TokenContext)
-    function removeImage() {
-        console.log("remove image")
+    function _removeImage() {
+        removeImage(images[imageIndex])
     }
 
     function _uploadImage(uri, type) {
@@ -25,7 +26,6 @@ SettingsImage = ({
         }
         uploadImage(tokenRef.current.token, image)
             .then((url) => {
-
                 addImage(url)
             })
     }
@@ -91,12 +91,13 @@ SettingsImage = ({
                 sliderBoxHeight={(dimensions.height * (3 / 4)) * (2 / 3)}
                 images={images.map((_image) => { return (imageServer + _image) })}
                 ImageComponentStyle={styles.imageComponent}
+                currentImageEmitter={(index) => setImageIndex(index)}
             />
             <View style={[styles.containerButtons, {
                 height: (dimensions.height * (3 / 4)) * (2 / 3),
                 width: dimensions.width * (1 / 4)
             }]}>
-                <TouchableOpacity style={styles.buttons} onPress={() => removeImage()}>
+                <TouchableOpacity style={styles.buttons} onPress={() => _removeImage()}>
                     <MIcon style={styles.button} name='delete' ></MIcon>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttons} onPress={() => openImagePicker()}>
@@ -111,18 +112,19 @@ SettingsImage = ({
 var styles = StyleSheet.create({
     containerImageSettings: {
         flexDirection: 'row',
-        backgroundColor: 'white',
     },
     containerSliderBox: {
         flex: 3,
     },
     containerButtons: {
         flex: 1,
-        backgroundColor: 'white'
     },
     buttons: {
         flex: 1,
-        margin: 10,
+        borderRadius: 5,
+        marginTop: 10,
+        marginLeft: 10,
+        marginRight: 10,
         backgroundColor: 'grey',
         justifyContent: "center",
         alignItems: 'center'

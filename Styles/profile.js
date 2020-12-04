@@ -3,6 +3,9 @@ import { StyleSheet } from 'react-native'
 
 const g = global.STYLES
 export default styles = StyleSheet.create({
+    formBox: {
+        height: 25
+    },
     scrollView: {
         transform: [{
             rotateY: '180deg'
@@ -10,9 +13,11 @@ export default styles = StyleSheet.create({
         backgroundColor: g.smallBackgroundColor
     },
     container: {
+
         transform: [{
             rotateY: '180deg'
         }],
+        backgroundColor: g.smallBackgroundColor,
     },
     containerHeader: {
         backgroundColor: g.backgroundColor,
@@ -31,13 +36,35 @@ export default styles = StyleSheet.create({
         marginHorizontal: g.largeGap,
         fontWeight: 'bold',
         color: g.textColor,
-        borderColor: g.backgroundColor,
+    },
+    descTitle: {
+        textTransform: 'capitalize',
+        marginBottom: 25,
+        marginTop: 25,
+        marginHorizontal: g.largeGap,
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: g.textColor,
     },
     text: {
+        height: 40,
+        backgroundColor: 'white',
+        borderRadius: 5,
         marginVertical: g.smallGap / 2,
         marginHorizontal: g.largeGap,
         fontWeight: 'bold',
         color: g.textColor,
+        borderColor: g.backgroundColor,
+    },
+    descText: {
+        textAlignVertical: 'top',
+        backgroundColor: 'white',
+        borderRadius: 5,
+        marginVertical: g.smallGap / 2,
+        marginHorizontal: g.largeGap,
+        fontWeight: 'bold',
+        color: g.textColor,
+        borderBottomWidth: 2,
         borderColor: g.backgroundColor,
     }
 })
