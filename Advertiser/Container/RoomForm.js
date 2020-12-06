@@ -37,10 +37,11 @@ const RoomForm = ({
         card.images ? setImages(card.images) : null
         card.attributes ? setAttributes(card.attributes) : null
         card.equipment ? setEquipment(card.equipment) : null
-        if (card.address && card.address.streetname) {
-            setAddress(card.address.streetname)
-            setAddressNum(card.address.streetnumber.$numberInt)
-            setAddressPostCode(card.address.postalcode.$numberInt)
+
+        if (card.address) {
+            card.address.streetname ? setAddress(card.address.streetname) : null
+            card.address.streetnumber ? setAddressNum(card.address.streetnumber.$numberInt) : null
+            card.address.postalcode ? setAddressPostCode(card.address.postalcode.$numberInt) : null
         }
     }, [])
     useEffect(() => {

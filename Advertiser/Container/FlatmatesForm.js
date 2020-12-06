@@ -28,14 +28,15 @@ const FlatmatesForm = ({
         card.title ? setTitle(card.title) : null
         card.description ? setDesc(card.description) : null
         card.images ? setImages(card.images) : null
+        card.attributes ? setAttributes(card.attributes) : null
     }, [])
     useEffect(() => {
         if (update) {
-
             let updateCard = { ...cardItem.card }
             updateCard.title = title
             updateCard.description = desc
             updateCard.images = images
+            updateCard.attributes = attributes
             let updateCardItem = { ...cardItem }
             updateCardItem.card = updateCard
             cardItemsActions.updateCard(updateCardItem)

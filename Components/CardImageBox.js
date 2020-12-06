@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import { SliderBox } from 'react-native-image-slider-box'
 const CardImageBox = ({
+    _setIndex,
     width,
     height,
     images
@@ -14,6 +15,11 @@ const CardImageBox = ({
                 sliderBoxHeight={height}
                 images={images.map((_image) => { return (imageServer + _image) })}
                 ImageComponentStyle={styles.imageComponent}
+                currentImageEmitter={(index) => {
+                    if (_setIndex) {
+                        _setIndex(index)
+                    }
+                }}
             />
         </View>
     )

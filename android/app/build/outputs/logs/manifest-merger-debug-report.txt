@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-30:12
-MERGED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-30:12
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+MERGED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-36:12
 MERGED from [com.facebook.flipper:flipper:0.54.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/59a4b8913e6062b46c3c4ae4360c8a4a/flipper-0.54.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/3884ed31e59069e8b4a638d31e289694/flipper-network-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/8b090887c9f902afb445322f334c5555/flipper-fresco-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
@@ -13,6 +13,7 @@ MERGED from [:react-native-firebase_auth] /home/workerferd/go/src/github.com/Fer
 MERGED from [:react-native-firebase_app] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-image-picker] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-maps] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-reanimated] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -20,6 +21,7 @@ MERGED from [:react-native-vector-icons] /home/workerferd/go/src/github.com/Ferd
 MERGED from [com.facebook.react:react-native:0.63.3] /home/workerferd/.gradle/caches/transforms-2/files-2.1/db8acd54b19efae24a5d3ba6458e941f/jetified-react-native-0.63.3/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/eebf1fc45738c4d63cbf89f228c83d83/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r245459] /home/workerferd/.gradle/caches/transforms-2/files-2.1/d9a6dd16fd5cb477e17548c906fb4be2/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-linear-gradient] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.fresco:flipper:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/477fdde5ffb63a0d2912db659f2a61b0/flipper-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/93fca5e04672f4f041fbbe68844d4adc/stetho-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/81039ab1cc209b4d86bdc35bcf8c6074/fresco-2.2.0/AndroidManifest.xml:2:1-9:12
@@ -41,7 +43,9 @@ MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/workerferd/.gra
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/cb381a6486dd837e6d804ccadd38a300/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/edc7f05477c0e87a06596d1223b7874a/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.firebase:firebase-auth:19.4.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c429726150de93f01d99407ee0237172/firebase-auth-19.4.0/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/abc39a90d464bee07f64faea3e3c1da1/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/727cc3219f40d73eb388327c13bdf666/play-services-auth-api-phone-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/f67e62957f9557db9560bed03a9325e6/play-services-auth-base-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/cc0a512b2cf8fccedb57745400150478/firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
@@ -53,6 +57,7 @@ MERGED from [com.google.firebase:firebase-installations:16.3.2] /home/workerferd
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/a98c011d6995bc7bf9236002ba08168b/jetified-firebase-common-19.3.0/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/5a076939129baabd03dae8348d5e5183/firebase-installations-interop-16.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6e87dc9c684efcd568e83b6566b0234e/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/e06f9b098794cf94ce5f4a2a9a8c9f38/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/ea1c77a7a7825a9046333b5cdbb5dbc4/play-services-measurement-17.6.0/AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/931ebe8fc1a6324cd99fcc5dce97a637/play-services-measurement-sdk-17.6.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/1aea0018ff6ed8475202c7a5bddfdeb8/play-services-measurement-impl-17.6.0/AndroidManifest.xml:17:1-31:12
@@ -89,6 +94,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/workerferd/
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/228fb46c96ac41ea34e384db81628642/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/2fad0744a8dda9b505a75fadb6e3f008/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/5feff886d3c8ed1069db886cf03dc001/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c4aeb5735a5b5be83b7a9ef500df40fa/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/d1f49a399f15a3cdba8b39f21bdc2579/ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -101,13 +107,13 @@ INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/andr
 		INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-36:12
 		INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:1-36:12
 		INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -119,6 +125,10 @@ MERGED from [com.facebook.flipper:flipper:0.54.0] /home/workerferd/.gradle/cache
 MERGED from [com.facebook.flipper:flipper:0.54.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/59a4b8913e6062b46c3c4ae4360c8a4a/flipper-0.54.0/AndroidManifest.xml:15:5-67
 MERGED from [:react-native-firebase_auth] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [:react-native-firebase_auth] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-maps] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/37828b667843f86678a3dc603d99aae5/play-services-measurement-api-17.6.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/37828b667843f86678a3dc603d99aae5/play-services-measurement-api-17.6.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:16.3.2] /home/workerferd/.gradle/caches/transforms-2/files-2.1/10a5d8e1022c01007ba69afafcd9469b/firebase-installations-16.3.2/AndroidManifest.xml:11:5-67
@@ -144,9 +154,9 @@ ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android
 	android:name
 		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:7:22-77
 application
-ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:8:5-28:19
-MERGED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:8:5-28:19
-MERGED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:8:5-28:19
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:8:5-34:19
+MERGED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:8:5-34:19
+MERGED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:8:5-34:19
 MERGED from [:react-native-image-picker] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-image-picker] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.react:react-native:0.63.3] /home/workerferd/.gradle/caches/transforms-2/files-2.1/db8acd54b19efae24a5d3ba6458e941f/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
@@ -157,8 +167,12 @@ MERGED from [com.google.android.material:material:1.1.0] /home/workerferd/.gradl
 MERGED from [com.google.android.material:material:1.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.firebase:firebase-auth:19.4.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c429726150de93f01d99407ee0237172/firebase-auth-19.4.0/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth:19.4.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c429726150de93f01d99407ee0237172/firebase-auth-19.4.0/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/abc39a90d464bee07f64faea3e3c1da1/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/abc39a90d464bee07f64faea3e3c1da1/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/cc0a512b2cf8fccedb57745400150478/firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/cc0a512b2cf8fccedb57745400150478/firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/1db2197747cbb6fb7eb3ebed14c2ac6d/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
@@ -175,6 +189,8 @@ MERGED from [com.google.firebase:firebase-common:19.3.0] /home/workerferd/.gradl
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/a98c011d6995bc7bf9236002ba08168b/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6e87dc9c684efcd568e83b6566b0234e/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6e87dc9c684efcd568e83b6566b0234e/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/e06f9b098794cf94ce5f4a2a9a8c9f38/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/e06f9b098794cf94ce5f4a2a9a8c9f38/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/ea1c77a7a7825a9046333b5cdbb5dbc4/play-services-measurement-17.6.0/AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/ea1c77a7a7825a9046333b5cdbb5dbc4/play-services-measurement-17.6.0/AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/931ebe8fc1a6324cd99fcc5dce97a637/play-services-measurement-sdk-17.6.0/AndroidManifest.xml:22:5-23:19
@@ -195,6 +211,8 @@ MERGED from [androidx.core:core:1.1.0] /home/workerferd/.gradle/caches/transform
 MERGED from [androidx.core:core:1.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/5b7ee3d59851bc272e834bb938f0ae3f/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/d251675046311047176ef0e7b713663e/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/d251675046311047176ef0e7b713663e/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
 	android:requestLegacyExternalStorage
 		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:9:7-50
 		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:9:7-50
@@ -224,32 +242,46 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/worke
 	android:name
 		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:10:7-38
 		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:10:7-38
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:16:1-18:63
+	android:value
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:18:6-61
+	android:name
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:17:6-51
+uses-library#org.apache.http.legacy
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:21:4-82
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:21:56-80
+	android:name
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:21:18-55
 activity#com.coli.MainActivity
-ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:16:7-26:18
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:22:7-32:18
 	android:label
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:18:9-41
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:24:9-41
 	android:launchMode
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:20:9-40
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:26:9-40
 	android:windowSoftInputMode
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:21:9-51
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:27:9-51
 	android:configChanges
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:19:9-86
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:25:9-86
 	android:name
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:17:9-37
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:23:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:22:9-25:25
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:28:9-31:25
 action#android.intent.action.MAIN
-ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:23:13-65
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:29:13-65
 	android:name
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:23:21-62
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:29:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:24:13-73
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:30:13-73
 	android:name
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:24:23-70
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:30:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:27:7-84
+ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:33:7-84
 	android:name
-		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:27:17-81
+		ADDED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml:33:17-81
 uses-sdk
 INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/src/main/AndroidManifest.xml
@@ -270,6 +302,8 @@ MERGED from [:react-native-gesture-handler] /home/workerferd/go/src/github.com/F
 MERGED from [:react-native-gesture-handler] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-image-picker] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-reanimated] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-safe-area-context] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -284,6 +318,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/workerf
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/eebf1fc45738c4d63cbf89f228c83d83/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r245459] /home/workerferd/.gradle/caches/transforms-2/files-2.1/d9a6dd16fd5cb477e17548c906fb4be2/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /home/workerferd/.gradle/caches/transforms-2/files-2.1/d9a6dd16fd5cb477e17548c906fb4be2/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:flipper:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/477fdde5ffb63a0d2912db659f2a61b0/flipper-2.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/477fdde5ffb63a0d2912db659f2a61b0/flipper-2.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/93fca5e04672f4f041fbbe68844d4adc/stetho-2.2.0/AndroidManifest.xml:5:5-7:41
@@ -326,8 +362,12 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/workerferd/.gradle/
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/edc7f05477c0e87a06596d1223b7874a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:19.4.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c429726150de93f01d99407ee0237172/firebase-auth-19.4.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:19.4.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c429726150de93f01d99407ee0237172/firebase-auth-19.4.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/abc39a90d464bee07f64faea3e3c1da1/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/abc39a90d464bee07f64faea3e3c1da1/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/727cc3219f40d73eb388327c13bdf666/play-services-auth-api-phone-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/727cc3219f40d73eb388327c13bdf666/play-services-auth-api-phone-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/f67e62957f9557db9560bed03a9325e6/play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
@@ -350,6 +390,8 @@ MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /home/wo
 MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/5a076939129baabd03dae8348d5e5183/firebase-installations-interop-16.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6e87dc9c684efcd568e83b6566b0234e/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6e87dc9c684efcd568e83b6566b0234e/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/e06f9b098794cf94ce5f4a2a9a8c9f38/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/e06f9b098794cf94ce5f4a2a9a8c9f38/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/ea1c77a7a7825a9046333b5cdbb5dbc4/play-services-measurement-17.6.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/ea1c77a7a7825a9046333b5cdbb5dbc4/play-services-measurement-17.6.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/931ebe8fc1a6324cd99fcc5dce97a637/play-services-measurement-sdk-17.6.0/AndroidManifest.xml:20:5-44
@@ -422,6 +464,8 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/workerferd/.gradle/
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/2fad0744a8dda9b505a75fadb6e3f008/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/5feff886d3c8ed1069db886cf03dc001/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/5feff886d3c8ed1069db886cf03dc001/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
 MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c4aeb5735a5b5be83b7a9ef500df40fa/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c4aeb5735a5b5be83b7a9ef500df40fa/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/d1f49a399f15a3cdba8b39f21bdc2579/ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
@@ -456,6 +500,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.6.0] /h
 		ADDED from [:react-native-firebase_auth] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:react-native-firebase_auth] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/37828b667843f86678a3dc603d99aae5/play-services-measurement-api-17.6.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/37828b667843f86678a3dc603d99aae5/play-services-measurement-api-17.6.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:16.3.2] /home/workerferd/.gradle/caches/transforms-2/files-2.1/10a5d8e1022c01007ba69afafcd9469b/firebase-installations-16.3.2/AndroidManifest.xml:10:5-79
@@ -484,6 +530,10 @@ ADDED from [:react-native-image-picker] /home/workerferd/go/src/github.com/Ferdi
 		ADDED from [:react-native-image-picker] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
 	android:name
 		ADDED from [:react-native-image-picker] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-maps] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-maps] /home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
@@ -504,6 +554,12 @@ ADDED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.
 		ADDED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:18.1.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c9feadfd1b30c87aca571fe8c4ec63b1/play-services-auth-18.1.0/AndroidManifest.xml:34:13-89
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/b5e92fd3d8ab0c9d7b605f9109eb00b3/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:19.4.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/c429726150de93f01d99407ee0237172/firebase-auth-19.4.0/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
@@ -606,6 +662,8 @@ ADDED from [com.google.android.gms:play-services-measurement:17.6.0] /home/worke
 		ADDED from [com.google.android.gms:play-services-measurement:17.6.0] /home/workerferd/.gradle/caches/transforms-2/files-2.1/ea1c77a7a7825a9046333b5cdbb5dbc4/play-services-measurement-17.6.0/AndroidManifest.xml:40:13-87
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:17.1.1] /home/workerferd/.gradle/caches/transforms-2/files-2.1/8028300fbce121f1ad7bccb796cbfdf1/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
 	android:value
 		ADDED from [com.google.android.gms:play-services-basement:17.1.1] /home/workerferd/.gradle/caches/transforms-2/files-2.1/8028300fbce121f1ad7bccb796cbfdf1/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
 	android:name

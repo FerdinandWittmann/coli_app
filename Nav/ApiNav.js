@@ -15,6 +15,7 @@ import AdvChat from '../Advertiser/Container/AdvChatScreen'
 import AdvProfile from '../Advertiser/Container/AdvProfileScreen'
 import DropdownPicker from 'react-native-dropdown-picker'
 import { getUser, createCards } from '../Api/user'
+import auth from '@react-native-firebase/auth'
 const ApiNav = ({
 }) => {
     const tokenRef = useContext(TokenContext)
@@ -28,6 +29,7 @@ const ApiNav = ({
     useEffect(() => {
         Keyboard.addListener("keyboardDidShow", _keyboardDidShow)
         Keyboard.addListener("keyboardDidHide", _keyboardDidHide)
+        const subscriberToken = auth().onIdTokenChanged(onIdTokenChanged)
         getUser(tokenRef.current.token)
             .then((response) => {
                 if (response.ok) {
@@ -42,11 +44,28 @@ const ApiNav = ({
                 console.log(error)
             })
         return () => {
+            subscriberToken
             Keyboard.removeListener("keyboardDidShow", _keyboardDidShow)
             Keyboard.removeListener("keyboardDidHide", _keyboardDidHide)
         }
 
     }, [])
+
+    function onIdTokenChanged(user) {
+        if (user != null) {
+            user.getIdTokenResult()
+                .then((jwtToken) => {
+                    tokenRef.current = {
+                        token: jwtToken.token,
+                        exp: jwtToken.exp
+                    }
+                    setLoggedIn(1)
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
+        }
+    }
     function _keyboardDidShow() {
         setKeyboard(true)
     }

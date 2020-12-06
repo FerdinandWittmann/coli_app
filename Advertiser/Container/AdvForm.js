@@ -36,10 +36,10 @@ const AdvForm = ({
         card.description ? setDesc(card.description) : null
         card.attributes ? setAttributes(card.attributes) : null
         card.shortdescription ? setShortDesc(card.shortdescription) : null
-        if (card.address && card.address.streetname) {
-            setAddress(card.address.streetname)
-            setAddressNum(card.address.streetnumber.$numberInt)
-            setAddressPostCode(card.address.postalcode.$numberInt)
+        if (card.address) {
+            card.address.streetname ? setAddress(card.address.streetname) : null
+            card.address.streetnumber ? setAddressNum(card.address.streetnumber.$numberInt) : null
+            card.address.postalcode ? setAddressPostCode(card.address.postalcode.$numberInt) : null
         }
     }, [])
     useEffect(() => {
@@ -49,11 +49,9 @@ const AdvForm = ({
             updateCard.age = parseInt(age)
             updateCard.profession = profession
             updateCard.description = desc
-            updateCard.address = {
-                streetname: address,
-                streetnumber: parseInt(addressNum),
-                postalcode: parseInt(addressPostCode)
-            }
+            updateCard.address.streetname = address
+            updateCard.address.streetnumber = parseInt(addressNum)
+            updateCard.address.postalcode = parseInt(addressPostCode)
             updateCard.shortdescription = shortDesc
             updateCard.attributes = attributes
             updateCard.images = images

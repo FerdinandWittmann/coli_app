@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_nested_folders.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_nested_folders.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
@@ -168,6 +172,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_amu_bubble_mask.9.png.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/drawable-xxhdpi-v4/amu_bubble_mask.9.png"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_clear_material.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable/abc_ic_clear_material.xml"
     },
@@ -280,6 +288,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_document_nest.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_document_nest.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/animator/mtrl_fab_transformation_sheet_expand_spec.xml"
     },
@@ -326,6 +338,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_nested_multigeometry.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_nested_multigeometry.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
@@ -414,6 +430,14 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_checked_circle.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/drawable/ic_mtrl_checked_circle.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_default_balloon.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_default_balloon.kml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/layout_amu_text_bubble.xml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/layout/amu_text_bubble.xml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -636,6 +660,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/layout_amu_webview.xml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/layout/amu_webview.xml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -654,6 +682,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_ground_overlay.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_ground_overlay.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -726,6 +758,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/color/mtrl_text_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_ground_overlay_color.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_ground_overlay_color.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -854,6 +890,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_visibility_ground_overlay.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_visibility_ground_overlay.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/layout_redbox_view.xml.flat",
@@ -1036,6 +1076,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_amu_bubble_shadow.9.png.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/drawable-xxhdpi-v4/amu_bubble_shadow.9.png"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
@@ -1134,6 +1178,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/color_mtrl_navigation_item_text_color.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/color/mtrl_navigation_item_text_color.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_basic_placemark.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_basic_placemark.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
@@ -1304,6 +1352,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/layout/mtrl_calendar_days_of_week.xml"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_amu_bubble_shadow.9.png.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/drawable-xhdpi-v4/amu_bubble_shadow.9.png"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
@@ -1318,6 +1370,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_multigeometry_placemarks.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_multigeometry_placemarks.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1548,6 +1604,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_cdata.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_cdata.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/1db2197747cbb6fb7eb3ebed14c2ac6d/play-services-base-17.1.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
@@ -1640,6 +1700,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/1db2197747cbb6fb7eb3ebed14c2ac6d/play-services-base-17.1.0/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_extended_data.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_extended_data.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_test_custom_background.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/drawable/test_custom_background.xml"
     },
@@ -1682,6 +1746,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_unsupported.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_unsupported.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
@@ -1812,6 +1880,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_unknwown_folder.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_unknwown_folder.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/color_mtrl_filled_stroke_color.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/color/mtrl_filled_stroke_color.xml"
     },
@@ -1892,12 +1964,20 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable/abc_btn_radio_material.xml"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_basic_folder.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_basic_folder.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/drawable-anydpi-v21/design_ic_visibility.xml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_dark.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_poly_style_boolean_alpha.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_poly_style_boolean_alpha.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/layout_mtrl_picker_text_input_date_range.xml.flat",
@@ -1942,6 +2022,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_amu_bubble_mask.9.png.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/drawable-xhdpi-v4/amu_bubble_mask.9.png"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2034,6 +2118,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_ballon_gx_prefix.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_ballon_gx_prefix.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -2192,6 +2280,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/layout/design_navigation_item_header.xml"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/layout_amu_info_window.xml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/layout/amu_info_window.xml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_btn_radio_on_to_off_mtrl_animation.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable/btn_radio_on_to_off_mtrl_animation.xml"
     },
@@ -2270,6 +2362,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/layout_mtrl_picker_fullscreen.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/layout/mtrl_picker_fullscreen.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_multiple_placemarks.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_multiple_placemarks.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -2472,6 +2568,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/color/material_on_background_emphasis_medium.xml"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_inline_style.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_inline_style.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/112251971af8a670e9b020b688136023/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
@@ -2608,6 +2708,10 @@
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/1db2197747cbb6fb7eb3ebed14c2ac6d/play-services-base-17.1.0/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_draw_order_ground_overlay.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_draw_order_ground_overlay.kml"
+    },
+    {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/layout_design_navigation_menu.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/f3887faf8385d35eb4be66d929dbafdc/material-1.1.0/res/layout/design_navigation_menu.xml"
     },
@@ -2650,6 +2754,10 @@
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
         "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/1db2197747cbb6fb7eb3ebed14c2ac6d/play-services-base-17.1.0/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/raw_amu_poly_style_boolean_numeric.kml.flat",
+        "source": "/home/workerferd/.gradle/caches/transforms-2/files-2.1/6b97b17fbf1d72e3af539c46dd0e46d7/jetified-android-maps-utils-0.5/res/raw/amu_poly_style_boolean_numeric.kml"
     },
     {
         "merged": "/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",

@@ -3,6 +3,22 @@ import { StyleSheet } from 'react-native'
 
 const g = global.STYLES
 export default globalStyles = StyleSheet.create({
+    overlayGradientBox: {
+
+        width: '100%',
+        padding: 25,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingTop: 35
+    },
+    overlayBox: {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        zIndex: 2,
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+    },
     roomObjectTextInput: {
         backgroundColor: 'white',
         borderWidth: 1,
@@ -64,5 +80,9 @@ export default globalStyles = StyleSheet.create({
     text: {
         fontWeight: 'bold',
         fontSize: 20,
+    },
+    descText: {
+        fontWeight: 'bold',
+        fontSize: 15,
     }
 }) 

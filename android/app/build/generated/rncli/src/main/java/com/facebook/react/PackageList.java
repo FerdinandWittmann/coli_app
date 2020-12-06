@@ -21,6 +21,10 @@ import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-image-picker
 import com.imagepicker.ImagePickerPackage;
+// react-native-linear-gradient
+import com.BV.LinearGradient.LinearGradientPackage;
+// react-native-maps
+import com.airbnb.android.react.maps.MapsPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -79,6 +83,8 @@ public class PackageList {
       new ReactNativeFirebaseAuthPackage(),
       new RNGestureHandlerPackage(),
       new ImagePickerPackage(),
+      new LinearGradientPackage(),
+      new MapsPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
