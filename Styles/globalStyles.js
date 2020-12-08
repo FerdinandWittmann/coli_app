@@ -86,7 +86,6 @@ export default globalStyles = StyleSheet.create({
         fontSize: 15,
     },
     formTitle: {
-        textTransform: 'capitalize',
         marginVertical: g.smallGap / 2,
         marginHorizontal: g.largeGap,
         fontWeight: 'bold',

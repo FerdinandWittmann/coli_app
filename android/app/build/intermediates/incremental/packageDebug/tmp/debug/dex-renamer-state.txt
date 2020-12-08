@@ -1,4 +1,4 @@
-#Sun Dec 06 10:36:30 CET 2020
+#Tue Dec 08 19:18:31 CET 2020
 path.4=classes_2.dex
 path.3=classes_1.dex
 path.2=classes_0.dex
@@ -19,14 +19,14 @@ base.2=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app
 base.1=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
 base.0=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 renamed.3=classes4.dex
-path.12=classes_10.dex
+path.12=classes_9.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 path.10=classes_8.dex
 renamed.0=classes.dex
 base.9=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_7.dex
 path.9=classes_7.dex
-path.11=classes_9.dex
+path.11=classes_10.dex
 renamed.7=classes8.dex
 base.8=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_6.dex
 renamed.6=classes7.dex
@@ -35,6 +35,6 @@ renamed.5=classes6.dex
 base.6=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_4.dex
 renamed.4=classes5.dex
 base.5=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_3.dex
-base.12=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_10.dex
-base.11=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_9.dex
+base.12=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_9.dex
+base.11=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_10.dex
 base.10=/home/workerferd/go/src/github.com/FerdinandWittmann/coli_app/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_8.dex
