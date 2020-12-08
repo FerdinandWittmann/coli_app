@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { View, Text, Button, StyleSheet } from 'react-native'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import { NavigationContainer } from '@react-navigation/native'
+import SettingsCard from '../../Container/SettingsCard'
+import AppForm from '../Container/AppForm'
 const AppSettingsNav = ({
+    cardItems,
+    children
 }) => {
-    const Tab = createMaterialTopTabNavigator()
     return (
-        <View style={{ flex: 1, backgroundColor: "white" }}>
-            <Text> AppProfileNav</Text>
-            <NavigationContainer>
-                <Tab.Navigator>
-                    <Tab.Screen name="Login" component={Login} />
-                    <Tab.Screen name="Register" component={Registration} />
-                </Tab.Navigator>
-            </NavigationContainer>
+        <View style={{ backgroundColor: 'white', flex: 1 }}>
+            <SettingsCard cardItem={cardItems[0]} form={<AppForm />} />
         </View>
     )
 }
@@ -21,4 +17,18 @@ var styles = StyleSheet.create({
 
 
 })
-export default AppSettingsNav 
+export default AppSettingsNav
+/*
+            <Tab.Navigator tabBarPosition={'top'}
+            >
+                {cardItems.map((cardItem, key) => {
+                    return <Tab.Screen
+                        key={key}
+                        name={cardItem.name == "room" && cardItem.number.$numberInt != "1" ?
+                            cardItem.name + cardItem.number.$numberInt :
+                            cardItem.name}
+                        initialParams={{ cardItem: cardItem }}
+                        component={React.cloneElement(children, { cardItem: { cardItem } })} />
+                })}
+            </Tab.Navigator>
+           */

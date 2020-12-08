@@ -16,6 +16,8 @@ import AdvProfile from '../Advertiser/Container/AdvProfileScreen'
 import DropdownPicker from 'react-native-dropdown-picker'
 import { getUser, createCards } from '../Api/user'
 import auth from '@react-native-firebase/auth'
+import MIcon from 'react-native-vector-icons/MaterialIcons'
+import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 const ApiNav = ({
 }) => {
     const tokenRef = useContext(TokenContext)
@@ -201,12 +203,37 @@ const ApiNav = ({
     else if (user.role == "applicant") {
         return (
             <NavigationContainer>
-                <Tab.Navigator style={keyboard ? { marginBottom: -60 } : { marginBottom: 0 }} tabBarPosition={'bottom'}>
+                <Tab.Navigator
+
+                    screenOptions={({ route }) => ({
+                        tabBarIcon: ({ focused, color, size }) => {
+                            let iconName;
+                            if (route.name == "AppCards") {
+                                iconName = 'cards'
+                                return <MCIcon name={iconName} style={{ fontSize: STYLES.tabBarIconSize }} />
+                            } else if (route.name == "Chat") {
+                                iconName = 'chat'
+                                return <MCIcon name={iconName} style={{ fontSize: STYLES.tabBarIconSize }} />
+                            } else if (route.name == "Profile") {
+                                iconName = "account-settings"
+                                return <MCIcon name={iconName} style={{ fontSize: STYLES.tabBarIconSize }} />
+                            }
+                        }
+                    })}
+                    tabBarOptions={{
+                        indicatorStyle: { backgroundColor: STYLES.backgroundColor },
+                        showLabel: false,
+                        showIcon: true,
+                    }}
+
+                    style={keyboard ? { marginBottom: -60 } : { marginBottom: 0 }}
+                    tabBarPosition={'bottom'}>
                     <Tab.Screen name="AppCards" component={AppCards} />
                     {/*<Tab.Screen name="HouseCards" component={HouseCards} />*/}
                     <Tab.Screen name="Chat" component={AppChat} />
                     <Tab.Screen
                         name="Profile"
+                        initialParams={{ carditems: user.carditems }}
                         component={AppProfile} />
                 </Tab.Navigator>
             </NavigationContainer>
@@ -214,7 +241,30 @@ const ApiNav = ({
     } else if (user.role == "advertiser") {
         return (
             <NavigationContainer>
-                <Tab.Navigator style={keyboard ? { marginBottom: -60 } : { marginBottom: 0 }} tabBarPosition={'bottom'}>
+                <Tab.Navigator
+                    screenOptions={({ route }) => ({
+                        tabBarIcon: ({ focused, color, size }) => {
+                            let iconName;
+                            if (route.name == "AppCards") {
+                                iconName = 'cards'
+                                return <MCIcon name={iconName} style={{ fontSize: STYLES.tabBarIconSize }} />
+                            } else if (route.name == "Chat") {
+                                iconName = 'chat'
+                                return <MCIcon name={iconName} style={{ fontSize: STYLES.tabBarIconSize }} />
+                            } else if (route.name == "Profile") {
+                                iconName = "account-settings"
+                                return <MCIcon name={iconName} style={{ fontSize: STYLES.tabBarIconSize }} />
+                            }
+                        }
+                    })}
+                    tabBarOptions={{
+                        indicatorStyle: { backgroundColor: STYLES.backgroundColor },
+                        showLabel: false,
+                        showIcon: true,
+                    }}
+
+                    style={keyboard ? { marginBottom: -60 } : { marginBottom: 0 }}
+                    tabBarPosition={'bottom'}>
                     <Tab.Screen name="AppCards" component={AdvCards} />
                     <Tab.Screen name="Chat" component={AdvChat} />
                     <Tab.Screen

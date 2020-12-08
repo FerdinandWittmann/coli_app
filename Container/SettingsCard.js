@@ -5,7 +5,6 @@ import SettingsImage from '../Components/SettingsImage'
 import LoadingScreen from '../Components/LoadingScreen'
 import useCardItems from '../GlobalState/useCardItems'
 const SettingsCard = ({
-    data,
     form,
     cardItem
 }) => {

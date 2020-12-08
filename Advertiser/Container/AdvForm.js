@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from 'react'
 import { TextInput, ScrollView, View, Text, Button, StyleSheet, FlatList, Alert } from 'react-native'
 import FormBox from '../../Components/FormBox'
@@ -21,9 +19,6 @@ const AdvForm = ({
     const [age, setAge] = useState("")
     const [profession, setProfession] = useState("")
     const [desc, setDesc] = useState("")
-    const [address, setAddress] = useState("")
-    const [addressNum, setAddressNum] = useState("")
-    const [addressPostCode, setAddressPostCode] = useState("")
     const [images, setImages] = useState([])
     const [attributes, setAttributes] = useState([])
     const [shortDesc, setShortDesc] = useState("")
@@ -36,11 +31,6 @@ const AdvForm = ({
         card.description ? setDesc(card.description) : null
         card.attributes ? setAttributes(card.attributes) : null
         card.shortdescription ? setShortDesc(card.shortdescription) : null
-        if (card.address) {
-            card.address.streetname ? setAddress(card.address.streetname) : null
-            card.address.streetnumber ? setAddressNum(card.address.streetnumber.$numberInt) : null
-            card.address.postalcode ? setAddressPostCode(card.address.postalcode.$numberInt) : null
-        }
     }, [])
     useEffect(() => {
         if (update) {
@@ -49,9 +39,6 @@ const AdvForm = ({
             updateCard.age = parseInt(age)
             updateCard.profession = profession
             updateCard.description = desc
-            updateCard.address.streetname = address
-            updateCard.address.streetnumber = parseInt(addressNum)
-            updateCard.address.postalcode = parseInt(addressPostCode)
             updateCard.shortdescription = shortDesc
             updateCard.attributes = attributes
             updateCard.images = images
@@ -101,30 +88,14 @@ const AdvForm = ({
                 placeholderText={"enter your profession/studies here please."}
                 value={profession}
                 setValue={setProfession}></FormBox>
-            <Text style={styles.descTitle}>Where will you work or study in your future city?</Text>
-            <FormBox
-                title={"Streetname"}
-                placeholderText={"enter your streetname of your workplace or university here please."}
-                value={address}
-                setValue={setAddress}></FormBox>
-            <FormBox
-                title={"Streetnumber"}
-                placeholderText={"enter your streetnumber here please."}
-                value={addressNum}
-                setValue={setAddressNum}></FormBox>
-            <FormBox
-                title={"Postalcode"}
-                placeholderText={"enter your postalcode here please."}
-                value={addressPostCode}
-                setValue={setAddressPostCode}></FormBox>
-            <Text style={styles.descTitle}>Flats should choose you, because...</Text>
+            <Text style={styles.descTitle}>You are an amazing flatmate, because...</Text>
             <DescBox
                 placeholderText={"quickly express yourself (500 Characters)"}
                 value={shortDesc}
                 setValue={setShortDesc}
                 height={100}
             ></DescBox>
-            <Text style={styles.descTitle}>Tell them a some more about who you are and how you imagine living together...</Text>
+            <Text style={styles.descTitle}>Place for more about you...</Text>
             <DescBox
                 placeholderText={"tell your future flatmates all they need to know about you"}
                 value={desc}

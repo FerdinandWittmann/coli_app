@@ -2,6 +2,8 @@ import 'react-native-gesture-handler';
 import React, { useState, useEffect, useContext } from 'react';
 import auth from '@react-native-firebase/auth'
 import { Button, View, Alert, Text, TextInput } from 'react-native'
+import globalStyles from '../Styles/globalStyles'
+import formStyles from '../Styles/profile'
 
 const App = ({
 }) => {
@@ -16,31 +18,34 @@ const App = ({
                 console.log("Auth succesfull")
             })
             .catch((error) => {
-                Alert.alert(error.message)
+                Alert.alert("SignUp: " + error.message)
             })
 
     }
     return (
-        <View style={{ flex: 1 }}>
-            <Text>EMAIL</Text>
+        <View style={{ flex: 1, padding: 25 }}>
+            <Text style={[formStyles.title, { fontSize: 30, paddingBottom: 15 }]} >Sign Up</Text>
+            <View style={{ width: '100%', height: 250, backgroundColor: STYLES.mediumBackgroundColor, padding: 15, borderRadius: STYLES.largeRadius, justifyContent: 'center' }}>
+                <Text style={formStyles.title}>EMAIL</Text>
 
-            <TextInput
-                style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
-                onChangeText={text => setEmail(text)}
-                value={email}
-            />
-            <Text>PASSWORD</Text>
+                <TextInput
+                    style={globalStyles.formTitle}
+                    onChangeText={text => setEmail(text)}
+                    value={email}
+                />
+                <Text style={formStyles.title}>PASSWORD</Text>
 
-            <TextInput
-                style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
-                onChangeText={text => setPwd(text)}
-                value={pwd}
-            />
-            <Button
-                onPress={signInFirebaseUser}
-                title="Sign In"
-                color="#841584"
-            ></Button>
+                <TextInput
+                    style={globalStyles.formTitle}
+                    onChangeText={text => setPwd(text)}
+                    value={pwd}
+                />
+                <Button
+                    onPress={signInFirebaseUser}
+                    title="Sign In"
+                    color={STYLES.backgroundColor}
+                ></Button>
+            </View>
         </View>
     );
 };

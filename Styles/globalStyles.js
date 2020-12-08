@@ -84,5 +84,17 @@ export default globalStyles = StyleSheet.create({
     descText: {
         fontWeight: 'bold',
         fontSize: 15,
+    },
+    formTitle: {
+        textTransform: 'capitalize',
+        marginVertical: g.smallGap / 2,
+        marginHorizontal: g.largeGap,
+        fontWeight: 'bold',
+        color: g.textColor,
+        borderBottomWidth: 2,
+        borderColor: STYLES.backgroundColor,
+        backgroundColor: 'white',
+        borderRadius: STYLES.smallRadius
+
     }
 }) 

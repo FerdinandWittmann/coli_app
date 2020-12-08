@@ -45,7 +45,7 @@ const ProfileCard = ({
             {cardItem.card.shortdescription ?
                 <View style={[globalStyles.textBoxes, { height: dimensions.height * 3 / 12, justifyContent: 'center' }]}>
                     <Text style={globalStyles.textHeader}>I am a great flatmate because, ...</Text>
-                    <Text style={globalStyles.text}>{cardItem.card.shortdescription}</Text>
+                    <Text style={globalStyles.descText}>{cardItem.card.shortdescription}</Text>
                 </View> : null}
             {cardItem.card.attributes ?
                 <View style={{ height: dimensions.height * 2 / 12, flexDirection: 'column-reverse' }}>
@@ -57,7 +57,7 @@ const ProfileCard = ({
                 </View> : null}
             {cardItem.card.description ? <View style={[globalStyles.textBoxes, { paddingBottom: 15 }]}>
                 <Text style={globalStyles.textHeader}>All about Me: </Text>
-                <Text style={globalStyles.text}>{cardItem.card.description}</Text>
+                <Text style={globalStyles.descText}>{cardItem.card.description}</Text>
             </View> : null}
         </ScrollView>
     )

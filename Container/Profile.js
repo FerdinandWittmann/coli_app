@@ -8,8 +8,6 @@ import { TokenContext } from '../GlobalState/TokenContext'
 import { getCardItems, updateCardItems } from "../Api/carditems"
 import { uploadImages } from '../Api/images'
 const Profile = ({
-    cards,
-    updateState,
     settingsScreen,
     profileScreen,
 }) => {
@@ -28,12 +26,12 @@ const Profile = ({
         getCardItems(tokenRef.current.token)
             .then((_cardItems) => {
                 cardItemsActions.setState(_cardItems)
-                setApiLoading(false)
             })
     }, [])
     useEffect(() => {
         let finished = true
         if (cardItems && cardItems.carditems) {
+            setApiLoading(false)
             cardItems.carditems.map((_cardItem) => {
                 if (!_cardItem.staged || _cardItem.staged != "finished") {
                     finished = false

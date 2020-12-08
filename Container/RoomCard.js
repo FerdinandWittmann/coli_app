@@ -79,7 +79,7 @@ const RoomCard = ({
                 </View> : null}
             {cardItem.card.description ? <View style={[globalStyles.textBoxes, { paddingBottom: 15 }]}>
                 <Text style={globalStyles.textHeader}>Room Description,... </Text>
-                <Text style={globalStyles.text}>{cardItem.card.description}</Text>
+                <Text style={globalStyles.descText}>{cardItem.card.description}</Text>
             </View> : null}
         </ScrollView>
     )

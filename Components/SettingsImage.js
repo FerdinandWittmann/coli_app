@@ -42,7 +42,7 @@ SettingsImage = ({
                 return
             }
             if (response.uri) {
-                _uploadImage(response.uri)
+                _uploadImage(response.uri, response.type)
             }
         })
     }
