@@ -1,5 +1,5 @@
 import { Dimensions } from 'react-native'
-global.server = "http://192.168.1.170:8080/api/"
+global.server = "http://192.168.1.170:8080/api/v1/"
 global.socket = "ws://192.168.1.170:8080/ws"
 global.imageServer = "http://192.168.1.170:8080/static/"
 global.STYLES = {

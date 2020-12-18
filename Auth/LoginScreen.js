@@ -7,8 +7,7 @@ import formStyles from '../Styles/profile'
 
 const App = ({
 }) => {
-    const [initializing, setInitializing] = useState(true);
-    const [email, setEmail] = useState("g@g.de")
+    const [email, setEmail] = useState("a@a.de")
     const [pwd, setPwd] = useState("111111")
 
     function signInFirebaseUser() {

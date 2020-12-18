@@ -52,7 +52,7 @@ const AppChatScreen = ({
         <View style={{ flex: 1 }}>
             <ImageBackground style={{ flex: 1, resizeMode: 'stretch', padding: 10 }} source={require('../../Resources/BackgroundImages/2.jpg')}>
                 <ScrollView style={{ height: dimensions.height, width: dimensions.width, flex: 1, borderRadius: 15, backgroundColor: STYLES.smallBackgroundColor }}>
-                    {matches.map((cardSet, key) => {
+                    {matches ? matches.map((cardSet, key) => {
                         let roomCard = cardSet.cardset[0]
                         return (
                             <TouchableOpacity
@@ -65,7 +65,7 @@ const AppChatScreen = ({
                                 </View>
                             </TouchableOpacity>
                         )
-                    })}
+                    }) : null}
 
                 </ScrollView>
                 {chatOpen.open ?

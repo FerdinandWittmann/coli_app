@@ -1,19 +1,19 @@
-
-export function getUser(token) {
+//authUser gets the User coresponding to firebaseID encoded in firebase Id returns user
+export function authUser(token) {
     return fetch(server + "user",
         {
-            method: 'GET',
+            method: 'POST',
             headers: {
-                Accept: 'application/json',
+                Accept: 'appplication/json',
                 'Content-Type': 'application/json',
                 'Authorization': token
 
             },
         })
 }
-
-export function createCards(token, json, role) {
-    return fetch(server + "user/" + role,
+//setUpUser sets the users role up and creates his card objects
+export function setupUser(token, json, role) {
+    return fetch(server + "user/setup",
         {
             method: 'POST',
             headers: {
